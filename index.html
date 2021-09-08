@@ -7,7 +7,16 @@
     <meta name="app-mobile-web-app-capable" content="blank" />
   <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
 </head>
-<body>
+<script>
+  window.addEventListener("load",function() {
+  // Set a timeout...
+  setTimeout(function(){
+    // Hide the address bar!
+    window.scrollTo(0, 1);
+  }, 0);
+});
+  </script>
+  <body>
 <h1><a href="index.html">HTML</a></h1>
 <ol>
   <li><a href="1.html">기술소개</a></li>
