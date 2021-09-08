@@ -1,0 +1,3023 @@
+<!DOCTYPE html>
+<!-- saved from url=(0070)http://help.igaworks.com/hc/ko/3_3/content/Article/how-to-set-deeplink -->
+<html lang="en" ng-app="cs-works" ng-strict-di=""><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    
+    <meta name="google-site-verification" content="oVA56NG1C4W9erNPClxh6cfZhEc4rVf2ogIjOGgF1Q4">
+    <meta name="msvalidate.01" content="9723E6764EABF2B3E46F4A4A2987E6FA">
+    <meta name="naver-site-verification" content="ba80942a671c35c6c0ddd66bb636ee13c3cdd6d2">
+    <title>IGAWorks Help Center</title>
+    <meta name="description" content="아이지에이웍스 헬프센터, 연동가이드, 이용방법, 애드브릭스, 애드팝콘, 트레이딩웍스, TF2, 라이브 오퍼레이션, 캠페인 인텔리전스, adbrix, adpopcorn, tradingworks, live operation, campaign intelligence">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="app-mobile-web-app-capable" content="yes">
+
+    <link rel="shortcut icon" href="http://help.igaworks.com/Content/images/igaw_favicon.ico">
+    <link href="./IGAWorks Help Center_files/css" rel="stylesheet" type="text/css">
+    <link href="./IGAWorks Help Center_files/css(1)" rel="stylesheet" type="text/css">
+
+
+    <link href="./IGAWorks Help Center_files/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="./IGAWorks Help Center_files/jquery.gritter.css" rel="stylesheet" type="text/css">
+    <link href="./IGAWorks Help Center_files/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="./IGAWorks Help Center_files/animate.css" rel="stylesheet" type="text/css">
+    
+    <link href="./IGAWorks Help Center_files/component.css" rel="stylesheet" type="text/css">
+    <link href="./IGAWorks Help Center_files/dots.css" rel="stylesheet" type="text/css">
+    <link href="./IGAWorks Help Center_files/default.css" rel="stylesheet">
+    
+
+    <script async="" src="./IGAWorks Help Center_files/analytics.js.ダウンロード"></script><script src="./IGAWorks Help Center_files/jquery-2.1.3.js.ダウンロード"></script>
+    <script src="./IGAWorks Help Center_files/bootstrap.min.js.ダウンロード"></script>
+    <script src="./IGAWorks Help Center_files/ZeroClipboard.min.js.ダウンロード"></script>
+    <script src="./IGAWorks Help Center_files/highlight.pack.js.ダウンロード"></script>
+    <script type="text/javascript">hljs.initHighlightingOnLoad();</script>
+    <script src="./IGAWorks Help Center_files/modalEffects.js.ダウンロード"></script>
+
+    
+    
+    
+
+    <style>
+        .zero-clipboard {
+            position: relative;
+            display: none;
+        }
+
+        .zero-clipboard {
+            display: block;
+        }
+
+        .btn-clipboard {
+            position: absolute;
+            top: 0;
+            right: 0;
+            z-index: 10;
+            display: block;
+            padding: 5px 8px;
+            font-size: 12px;
+            color: #767676;
+            cursor: pointer;
+            background-color: #fff;
+            border: 1px solid #e1e1e8;
+            border-radius: 0 4px 0 4px;
+        }
+
+        /*메일*/
+        .help-area {
+            background-color: transparent;
+            padding: 0px;
+            font-family: NanumGothic;
+            font-weight: normal;
+            position: fixed;
+            z-index: 1000;
+        }
+
+            /*.help-area .help-widget {
+                text-align: center;
+                position: fixed;
+                bottom: 0px;
+                right: 0px;
+            }*/
+
+        .help-mail-area label.help-mail-close {
+            padding-right: 5px;
+            float: right;
+            cursor:pointer;
+        }
+
+        .help-area .help-mail-area {
+            position: fixed;
+            bottom: 55px;
+            right: -50%;
+            /*background-color: #edeff1;*/
+            /*border: 1px solid #dddcdc;*/
+            /*border-radius: 6px;*/
+            /*padding: 10px;*/
+            /*box-shadow: 0 0 4px rgba(0, 0, 0, 0.14), 0 4px 8px rgba(0, 0, 0, 0.28);*/
+        }
+        .help-mail-area_mail{
+            float: right;
+            padding: 10px;
+            background-color: #edeff1;
+            border: 1px solid #dddcdc;
+            border-radius: 6px;
+            box-shadow: 0 0 4px rgba(0, 0, 0, 0.14), 0 4px 8px rgba(0, 0, 0, 0.28);
+        }
+        .help-mail-area_search {
+            float: left;
+            padding: 15px;
+            margin-right: 10px;
+            background-color: #fff;
+            border: 1px solid #dddcdc;
+            border-radius: 6px;
+            box-shadow: 0 0 4px rgba(0, 0, 0, 0.14), 0 4px 8px rgba(0, 0, 0, 0.28);
+            max-height: 529px;
+            overflow-y: auto;
+            width: 500px;
+            display:none;
+        }
+
+        .help-area .form-control {
+            border: 1px solid #bdc3c7;
+        }
+
+        .help-area .help-mail-header {
+            padding-bottom: 15px;
+            border-bottom: 1px solid lightgray;
+        }
+
+            .help-area .help-mail-header .col-xs-12 {
+                padding-bottom: 15px;
+            }
+
+        .help-area .help-mail-body {
+            padding-top: 10px;
+        }
+
+        .help-area .col-xs-6 {
+            padding: 0px;
+            padding-left: 0px;
+            padding-right: 0px;
+        }
+
+        .help-area .row {
+            margin: 0px;
+            margin-bottom: 10px;
+        }
+
+
+        .help-mail-header {
+            padding-bottom: 10px;
+            border-bottom: 1px solid lightgray;
+        }
+
+        .help-mail-footer {
+            padding-top: 10px;
+            /*float:right;*/
+            border-top: 1px solid lightgray;
+        }
+        .dataTables_scroll .dataTables_scrollBody table tbody td {
+        background-color: initial;
+    }
+
+    .dataTables_scrollBody::-webkit-scrollbar-track {
+        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+        border-radius: 10px;
+        background-color: #F5F5F5;
+    }
+
+    .dataTables_scrollBody::-webkit-scrollbar {
+        width: 6px;
+        background-color: #F5F5F5;
+    }
+
+        .dataTables_scrollBody::-webkit-scrollbar-thumb {
+            border-radius: 10px;
+            -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+            background-color: #555;
+        }
+
+        .rotate-15 {
+            -moz-transform: rotate(15deg);
+            -webkit-transform: rotate(15deg);
+            -o-transform: rotate(15deg);
+            -ms-transform: rotate(15deg);
+            transform: rotate(15deg);
+        }
+
+        @-webkit-keyframes rotating /* Safari and Chrome */ {
+  from {
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotating {
+  from {
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+.rotating {
+  -webkit-animation: rotating 2s linear infinite;
+  -moz-animation: rotating 2s linear infinite;
+  -ms-animation: rotating 2s linear infinite;
+  -o-animation: rotating 2s linear infinite;
+  animation: rotating 2s linear infinite;
+}
+    </style>
+</head>
+<body class="animated" ng-controller="myCtrl as ctrl" ng-init="demoPage = &#39;core&#39;" style="background-color:rgb(255, 255, 255) !important">
+
+    <div id="loading-spinners" style="width: 100%; height: 100%; position: fixed; z-index: 9999; background-color: black; color: white; opacity: 0.7; display: none;">
+        <div style="left: 50%;top: 50%;position:absolute;">
+            <div class="circles"></div>
+            <div style="text-align:center;" id="loading-message">로딩중입니다</div>
+        </div>
+    </div>
+    
+
+<style>
+    @import url('http://fonts.googleapis.com/earlyaccess/nanumgothic.css');
+
+.sidebar-module::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #F5F5F5;
+}
+
+.sidebar-module::-webkit-scrollbar
+{
+	width: 6px;
+	background-color: #F5F5F5;
+}
+
+.sidebar-module::-webkit-scrollbar-thumb
+{
+	background-color: #000000;
+}
+
+.article-navi-fix{
+	position: fixed;
+    top: 2px;
+}
+.article-navi-footer {
+    font-size: smaller;
+    color: black;
+    text-align: left;
+    z-index: 2000;
+}
+
+.article-navi-footer ul {
+    margin: 0 !important;
+    padding: 0 !important;
+    list-style: none;
+}
+
+.article-navi-footer  li {
+    padding: 5px 10px;
+}
+
+.article-navi-footer  a {
+    color: black;
+    text-decoration: none;
+    display: block;
+}
+
+.article-navi-footer  .toc-blockquote {
+    padding-left: 10px;
+    text-decoration: underline;    
+    font-weight: bold;
+}
+
+.article-navi-footer  .toc-h4 {
+    padding-left: 20px;
+}
+
+.article-navi-footer  .toc-active {
+    background: #44aaee;    
+}
+
+.article-navi-footer  .toc-active a {
+    color: white;
+    font-weight: bold;
+}
+
+.article-navi-opener {
+    background-color: blue;
+    width : 9%;    
+    left : 0px;
+    position: fixed;
+    z-index: 2000;
+}
+
+.article-navi-opener button {
+    text-align: right;
+}
+
+
+
+/*
+ * Globals
+ */
+
+hr.hr-style-double-angle-down {
+	border-top: 1px solid #dddddd;
+	text-align: center;
+}
+hr.hr-style-double-angle-down:after {
+    font-family: FontAwesome;
+	content: "\f103";
+	display: inline-block;
+	position: relative;
+	top: -12px;
+	padding: 0 10px;
+    background : #ffffff;	
+	color: #8c8b8b;
+	font-size: 18px;
+}
+
+.thumbnail .jumbotron.btn-rad, .thumbnail .btn.btn-rad  {
+    border-radius : 2px;
+}
+.thumbnail .btn {
+  margin-left : 0px;
+}
+.gradient {
+    background-color: #00AA9A;
+    color : #ffffff;
+    
+}
+
+
+body {
+  font-family : 'Nanum Gothic', "MS PGothic", sans-serif;
+  background-color: rgb(223, 224, 229) !important;
+}
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+  font-family : 'Nanum Gothic', "MS PGothic", sans-serif;
+  margin-top: 0;
+  font-weight: normal;
+  color: #333;
+}
+
+
+/*
+ * Override Bootstrap's default container.
+ */
+.help-main.pull-left {
+  background-color : #f5f5f5; 
+}
+
+.help-main.img { 
+    -ms-transform: scale(0.8,0.8); /* IE 9 */
+    -webkit-transform: scale(0.8,0.8); /* Safari */
+    transform: scale(0.8,0.8); /* Standard syntax */
+}
+
+.front-gate-page-sample-area {
+  margin-bottom: 20px;
+}
+
+.container{
+  background-color: rgba(0, 0, 0, 0) !important;
+}
+
+.container.gate-new {
+  background-color: rgb(223, 224, 229) !important;
+}
+
+@media (min-width: 1200px) {
+  .container{
+    //width: 970px;
+    padding-botton:30px;
+  }
+}
+
+
+/*
+ * Override by Mike
+ */
+.a-download {
+  vertical-align:-webkit-baseline-middle; 
+}
+
+.main-noti-block {
+  
+}
+
+.cs-works-release-note {
+  vertical-align : baseline; 
+}
+
+.csworks-quick-widget {
+  /*
+  position : absolute;
+  z-index : 0;
+  top: 30%;
+  right:7%;
+  */  
+}
+
+.csworks-quick-widget .csworks-quick-widget-badge {
+    position: fixed;
+    z-index: 1;
+    margin-left: -30px;
+    margin-top: 45px;
+    width: 35px;
+    font-weight: bold;
+    padding: 10px;
+    white-space: normal;
+    
+    font-size: 14px;
+}
+
+.csworks-quick-widget .csworks-quick-widget-badge-video {
+    position: fixed;
+    z-index: 1;
+    margin-left: -30px;
+    margin-top: 188px;
+    width: 35px;
+    font-weight: bold;
+    padding: 10px;
+    white-space: normal;
+    
+    font-size: 14px;
+}
+
+
+.csworks-quick-widget .csworks-quick-widget-content {
+  	position: absolute;
+    z-index: 1;
+    margin-left: -25px;
+    margin-top: 40px;
+    background-color: white;
+    padding: 10px;
+    width: 35px;
+  	border: 1px solid lightgreen;
+}
+
+.csworks-test {
+  display:none; 
+}
+
+
+/*Alerts*/
+.alert {
+  padding: 0;
+  margin-bottom: 0;
+  border: 0;
+  border-radius: 0;
+}
+.alert {
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  box-shadow: 0;
+}
+.alert .sign {
+  color: rgba(0, 0, 0, 0.2);
+  font-size: 20px;
+  vertical-align: middle;
+  margin-right: 5px;
+  text-align: center;
+  width: 25px;
+  display: inline-block;
+}
+.alert .close {
+  text-shadow: none;
+}
+.alert-primary {
+  background-color: #7761a7;
+  border-color: #6d579d;
+  color: #fff;
+}
+.alert-success {
+  background-color: #19b698;
+  border-color: #0fac8e;
+  color: #fff;
+}
+.alert-info {
+  background-color: #4aa3df;
+  border-color: #4099d5;
+  color: #fff;
+}
+
+.alert-info2 {
+  background-color: #E76363;
+  border-color: #E76363;
+  color: #fff;
+}
+
+
+.alert-warning {
+  background-color: #f16e3f;
+  border-color: #e76435;
+  color: #fff;
+}
+.alert-danger {
+  background-color: #ea6153;
+  border-color: #e05749;
+  color: #fff;
+}
+/*Alert White*/
+.alert-white {
+  background: #fff;
+  border-color: #d5d5d5;
+  color: #404040;
+  padding-left: 15px;
+  position: relative;
+}
+.alert-white .icon {
+    text-align: center;
+    width: 5px;
+    height: 100%;
+    position: absolute;
+    /* top: -2px; */
+    left: 0px;
+    /* border: 1px solid #BDBDBD; */
+    /* padding-top: 15px; */
+}
+/*
+.alert-white .icon:after {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  display: block;
+  content: '';
+  width: 10px;
+  height: 10px;
+  border: 1px solid #BDBDBD;
+  position: absolute;
+  border-left: 0;
+  border-bottom: 0;
+  top: 50%;
+  right: -6px;
+  margin-top: -3px;
+  background: #fff;
+}
+
+.alert-white.rounded {
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+}
+.alert-white.rounded .icon {
+  border-radius: 3px 0 0 3px;
+  -webkit-border-radius: 3px 0 0 3px;
+}
+*/
+.alert-white .icon i {
+  font-size: 20px;
+  color: #FFF;
+  left: 12px;
+  margin-top: -10px;
+  position: absolute;
+  top: 50%;
+  display: none;
+}
+.alert-white.alert-danger .icon,
+.alert-white.alert-danger .icon:after {
+  border-color: #e05749;
+  background: #ea6153;
+}
+.alert-white.alert-info .icon,
+.alert-white.alert-info .icon:after {
+  border-color: #4099d5;
+  background: #4aa3df;
+}
+.alert-white.alert-warning .icon,
+.alert-white.alert-warning .icon:after {
+  border-color: #e76435;
+  background: #f16e3f;
+}
+.alert-white.alert-success .icon,
+.alert-white.alert-success .icon:after {
+  border-color: #0fac8e;
+  background: #19b698;
+}
+.alert-white.alert-primary .icon,
+.alert-white.alert-primary .icon:after {
+  border-color: #6d579d;
+  background: #7761a7;
+}
+/*Alert White alt 1*/
+.alert-white-alt {
+  border-width: 2px;
+  background: #fff;
+  color: #404040;
+  padding-left: 61px;
+  position: relative;
+}
+.alert-white-alt .icon {
+  text-align: center;
+  width: 45px;
+  height: 103%;
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  border: 1px solid #BDBDBD;
+  padding-top: 15px;
+}
+.alert-white-alt .icon:after {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  display: block;
+  content: '';
+  width: 10px;
+  height: 10px;
+  border: 1px solid #BDBDBD;
+  position: absolute;
+  border-left: 0;
+  border-bottom: 0;
+  top: 50%;
+  right: -6px;
+  margin-top: -3px;
+  background: #fff;
+}
+.alert-white-alt.rounded {
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+}
+.alert-white-alt.rounded .icon {
+  border-radius: 3px 0 0 3px;
+  -webkit-border-radius: 3px 0 0 3px;
+}
+.alert-white-alt .icon i {
+  font-size: 20px;
+  color: #FFF;
+  left: 12px;
+  margin-top: -10px;
+  position: absolute;
+  top: 50%;
+}
+.alert-white-alt.alert-danger .icon,
+.alert-white-alt.alert-danger .icon:after {
+  border-color: #e05749;
+  background: #ea6153;
+}
+.alert-white-alt.alert-info .icon,
+.alert-white-alt.alert-info .icon:after {
+  border-color: #4099d5;
+  background: #4aa3df;
+}
+.alert-white-alt.alert-warning .icon,
+.alert-white-alt.alert-warning .icon:after {
+  border-color: #e76435;
+  background: #f16e3f;
+}
+.alert-white-alt.alert-success .icon,
+.alert-white-alt.alert-success .icon:after {
+  border-color: #0fac8e;
+  background: #19b698;
+}
+.alert-white-alt.alert-primary .icon,
+.alert-white-alt.alert-primary .icon:after {
+  border-color: #6d579d;
+  background: #7761a7;
+}
+/*Alert White Alt 2*/
+.alert-white-alt2 {
+  background: #fff;
+  border-color: #d5d5d5;
+  color: #404040;
+  padding-left: 61px;
+  position: relative;
+}
+.alert-white-alt2 .icon {
+  text-align: center;
+  width: 45px;
+  height: 103%;
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  border: 1px solid #d5d5d5;
+  padding-top: 15px;
+}
+.alert-white-alt2 .icon:after {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  display: block;
+  content: '';
+  width: 10px;
+  height: 10px;
+  border: 1px solid #d5d5d5;
+  position: absolute;
+  border-left: 0;
+  border-bottom: 0;
+  top: 50%;
+  right: -6px;
+  margin-top: -3px;
+  background: #fff;
+}
+.alert-white-alt2 .icon i {
+  font-size: 20px;
+  color: #FFF;
+  left: 12px;
+  margin-top: -10px;
+  position: absolute;
+  top: 50%;
+}
+.alert-white-alt2.alert-danger .icon i {
+  color: #ea6153;
+}
+.alert-white-alt2.alert-info .icon i {
+  color: #4aa3df;
+}
+.alert-white-alt2.alert-warning .icon i {
+  color: #f16e3f;
+}
+.alert-white-alt2.alert-success .icon i {
+  color: #19b698;
+}
+.alert-white-alt2.alert-primary .icon i {
+  color: #7761a7;
+}
+
+
+
+
+blockquote {
+  border-left-color : #3D556D;
+}
+
+.table {
+  word-break:break-all; 
+}
+
+pre {
+  border : 0px; 
+  border-radius : 0px;
+}
+
+.hljs {
+  background-color : transparent; 
+  font-family : 'Nanum Gothic';
+}
+
+.btn-download {
+  background-color: #3d566d;
+  border-color: transparent;
+  color: #fff;
+  -webkit-border-radius: 0;
+  outline: none;
+  margin-bottom: 5px !important;
+  margin-left: 3px;
+  font-size: 13px;
+  padding: 7px 11px;
+}
+
+
+.btn-download-adpopcorn {
+  background-color: #4CAF50;
+  border-color: transparent;
+  color: #fff;
+  -webkit-border-radius: 0;
+  outline: none;
+  margin-bottom: 5px !important;
+  margin-left: 3px;
+  font-size: 13px;
+  padding: 7px 11px;
+}
+
+/* css for FAQ */
+
+.faq-header {
+  padding:10px 0 10px 10px;
+}
+
+.faq-header.active  {
+  background:steelblue;
+}
+
+.answer {
+  padding-left:10px;
+}
+
+
+/* answer header color contoler */
+ .link_board {
+    color: #0088cc !important;
+    text-decoration: none;
+    cursor : pointer;
+    padding-left: 5px;
+  }
+
+ .link_board.active {
+    color: #ffffff !important;
+ }
+
+/* contoler end */
+
+.list_board {
+  padding-left:0px; 
+}
+
+  .list_board li {
+    overflow: hidden;
+    padding: 10px 0 10px;
+    border-bottom: 1px solid #dfdfdf;
+    font-size: 13px;
+    /*letter-spacing: -1px;*/
+  }
+
+  .list_board .txt_category {
+    /*float: center;*/
+    padding-left: 1px;
+    font-size: 12px;
+    color: #777;
+  }
+  .list_board .txt_date {
+    float: right;
+    padding-right: 1px;
+    font-size: 12px;
+    color: #777;
+  }
+  .list_board .answer.normal {
+    display: none;
+  }
+  .list_board &gt; li.category {
+    padding: 5px 0px;
+  }
+  .answer p {
+    line-height: 30px;
+  }
+  .title-row {
+    border-bottom: 1px solid #e5e5e5;
+    line-height: 28px;
+    padding: 10px;
+    margin-bottom: 20px !important;
+  }
+  /* Desktop Device */
+  /* 사용자 해상도가 1025px 이상일 때 */
+  @media all and (min-width:1025px) {
+    .faq-tab {
+      font-size: 14px;
+      width: 90px;
+      padding: 5px;
+      margin: 0 2px;
+    }
+  }
+  /* Tablet Device */
+  /* 사용자 해상도가 720px 이상일 때 */
+  @media (min-width:520px) and (max-width:1024px) {
+    .faq-tab {
+      font-size: 10px;
+      width: 50px;
+      padding: 4px
+    }
+  }
+  /* Mobile Device */
+  /* 사용자 해상도가 720px 이하일 때 */
+  @media all and (max-width: 519px) {
+    .faq-tab {
+      font-size:8px;
+      width: 46px;
+      padding:2px;
+    }
+  }
+  .faq-tab:focus, 
+  .faq-tab:active:focus {
+      outline: none !important;
+  }
+
+
+.faq-glyphicon {
+  color:#C3CACE; 
+  position: relative;
+  vertical-align:middle;
+  top: 0px;
+  display: inline-block;
+  font-family: 'Glyphicons Halflings';
+  font-style: normal;
+  font-weight: normal;
+  line-height: 0;
+
+  -webkit-font-smoothing: antialiased;
+}
+
+.faq-glyphicon.active {
+  color:white;
+}
+/* FAQ style end */
+
+
+/**
+    Mike Btn for download page
+    **/
+
+.btn-success-white {
+  display: inline-block;
+  padding: 3px 5px;
+  margin: 2px -1px 0px 0px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.428571429;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;  
+  border: 1px solid #4cae4c;
+  border-radius: 1px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+       -o-user-select: none;
+          user-select: none;
+}
+
+
+/*========================*/
+/* Side notes for calling out things
+-------------------------------------------------- */
+ 
+/* Base styles (regardless of theme) */
+.bs-callout {
+  padding: 20px;
+  margin: 20px 0;
+  border: 1px solid #eee;
+  border-left-width: 5px;
+  border-radius: 3px;
+  overflow: hidden;
+}
+.bs-callout h4 {
+  margin-top: 0;
+}
+.bs-callout p:last-child {
+  margin-bottom: 0;
+}
+.bs-callout code,
+.bs-callout .highlight {
+  background-color: #fff;
+}
+ 
+/* Themes for different contexts */
+.bs-callout-danger {
+  background-color: #fcf2f2;
+  border-left-color: #dFb5b4;
+}
+.bs-callout-warning {
+  background-color: #fefbed;
+  border-left-color: #f1e7bc;
+}
+.bs-callout-info {
+  background-color: #f0f7fd;
+  border-left-color: #d0e3f0;
+}
+.bs-callout-download {
+    border-left-color : #3D556D;
+}
+
+
+/*
+ * Masthead for nav
+ */
+
+.blog-notice {
+  background-color: #fff;
+}
+
+.blog-masthead {
+  background-color: #323235;
+  -webkit-box-shadow: inset 0 -2px 5px rgba(0,0,0,.1);
+          box-shadow: inset 0 -2px 5px rgba(0,0,0,.1);
+}
+
+.blog-masthead ul{
+  margin:0px;
+}
+
+.blog-masthead #brand{
+  position: relative;
+  display: inline-block;
+  float:left;
+margin-right:10px;
+margin-top:5px;
+}
+
+/* Nav links */
+.blog-nav-item , #navigator ul li a, #navigator ul li{
+  position: relative;
+  display: inline-block;
+  padding: 10px;
+  font-weight: 500;
+  color: #cdddeb;
+}
+.blog-nav-item:hover,
+  .blog-nav-item:focus , 
+    #navigator ul li a:hover, 
+      #navigator ul li a:focus{
+  color: #fff;
+  text-decoration: none;
+background : #4A4A4A;
+}
+
+/* Active state gets a caret at the bottom */
+.blog-nav .active , #navigator ul li.active a{
+  color: #fff;
+}
+.blog-nav .active:after, #navigator ul li.active:after {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 0;
+  margin-left: -5px;
+  vertical-align: middle;
+  content: " ";
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid;
+  border-left: 5px solid transparent;
+}
+
+
+/*
+ * Blog name and description
+ */
+
+.blog-header {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.blog-title {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  font-size: 60px;
+  font-weight: normal;
+}
+.blog-description {
+  font-size: 20px;
+  color: #999;
+}
+
+
+/*
+ * Main column and sidebar layout
+ */
+
+.blog-main {    
+}
+
+/* Sidebar modules for boxing content */
+.sidebar-module {
+  padding: 15px;
+  margin: 0 -15px 15px;
+  border: 1px solid #6993ba;
+  border-radius: 4px;
+}
+.sidebar-module-inset {
+  padding: 15px;
+  border: 1px solid #6993ba;
+  border-radius: 4px;
+}
+.sidebar-module-inset p:last-child,
+.sidebar-module-inset ul:last-child,
+.sidebar-module-inset ol:last-child {
+  margin-bottom: 0;
+}
+
+
+/* Pagination */
+.pager {
+  margin-bottom: 60px;
+  text-align: left;
+}
+.pager &gt; li &gt; a {
+  width: 140px;
+  padding: 10px 20px;
+  text-align: center;
+  border-radius: 30px;
+}
+
+
+/*
+ * Blog posts
+ */
+
+.blog-post {
+  margin-bottom: 60px;
+  border: 1px solid #6993ba;
+  border-radius: 4px;
+}
+.blog-post-title, .article-header{
+  font-size: 30px;
+  background-color: #3d566d;
+  color: white;
+  padding-left: 10px;
+}
+.blog-post-meta, .article-regist-date {
+  margin-bottom: 20px;
+  color:#DFDFDF;
+  background-color: #6993ba;
+  padding-right: 15px;
+  font-size: 14px;
+  text-align: right;
+}
+
+.article-content{
+  padding-lefT:30px; 
+  padding-right:30px;
+}
+
+
+/*
+ * Footer
+ */
+
+
+.blog-footer {
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  padding: 8px 0px 5px 0px;
+  color: #999;
+  text-align: center;
+  background-color: #38383a;
+  border-top: 1px solid #e5e5e5;
+  z-index: 1000;
+}
+
+.blog-footer.footer-span{
+  width:33%;
+}
+
+.blog-footer p:last-child {
+  margin-bottom: 0;
+}
+
+/*.cd-cont{
+  border: 1px solid #6993ba;
+  padding: 30px 35px;
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 8px;
+  margin-bottom: 20px;
+}*/
+
+.cd-cont{
+  border: 4px solid #f4f4f4;
+  border-bottom: 8px solid #f4f4f4;
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  margin-bottom: 20px;
+}
+
+.cd-cont.csworks-search{
+  border:0px;
+  border-color:#f4f4f4; 
+  background-color:#f4f4f4; 
+  padding: 12px;
+}
+
+.cd-cont .cd-cont-header{
+    background-color: #f4f4f4;
+    padding: 12px 0px 10px 15px;
+}
+
+.cd-cont .cd-cont-header h3{
+    font-size: 18px;
+    display: inline;
+  color: gray;
+  font-weight: 700;
+}
+
+.cd-cont .cd-cont-header a{
+  /*color:black;*/
+  color: gray;
+  /*font-weight: 700;*/
+}
+
+.cd-cont .cd-cont-header p{
+  color:#A9A9A9;
+  display: inline;
+  padding-left: 10px;
+  font-size: 12px;
+}
+
+.cd-cont .cd-cont-header hr{
+  display: none;
+}
+
+.cd-cont .cd-cont-section-row {
+  margin: 10px 0px 30px 0px;
+  /*margin-bottom: 40px;*/
+}
+
+.cd-cont .cd-cont-section{
+}
+
+.cd-cont .cd-cont-section .cd-cont-section-title{
+  padding-bottom: 10px;
+  border-bottom: 1px solid #f4f4f4;
+  font-weight: 800;
+}
+
+.cd-cont .cd-cont-section .cd-cont-section-title a:before{
+  /*display: inline-block;
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  content: "\f02d";
+  margin-right:5px;*/
+}
+
+.cd-cont .cd-cont-section .cd-cont-section-title a{
+  color: rgb(115, 115, 115);
+  font-size: 15px;
+}
+
+.cd-cont .cd-cont-section .cd-cont-section-title span.label{
+  padding: 3px 6px 1px 7px;
+  background-color: rgba(147, 158, 165, 0.6);
+  font-weight: bolder;
+}
+
+.cd-cont .cd-cont-section .cd-cont-section-list{
+    padding-left: 17px;
+}
+
+.cd-cont .cd-cont-section .cd-cont-section-list li{
+  list-style-type: none;
+  margin-left: -9px;
+  margin-bottom:3px;
+}
+
+.cd-cont .cd-cont-section .cd-cont-section-list li.moreView{
+    margin-left: 4px;
+}
+
+.cd-cont .cd-cont-section .cd-cont-section-list li:before{
+  display: inline-block;
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  content: "\f0f6";
+  margin-right:5px;
+  /*color: #323235;*/
+  color: #A0A0A0;
+}
+
+.cd-cont .cd-cont-section .cd-cont-section-list li.moreView:before{
+  content: "";
+}
+
+.cd-cont .cd-cont-section .cd-cont-section-list li.moreView a:before{
+  display: inline-block;
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  content: "\f114";
+  margin-right:5px;
+  /*color: #323235;*/
+  color: #A0A0A0;
+}
+
+.cd-cont .cd-cont-section .cd-cont-section-list li.moreView a:hover:before{
+  content: "\f115";
+  margin-right:5px;
+}
+
+.cd-cont .cd-cont-section .cd-cont-section-list a:hover,
+.cd-cont .cd-cont-section .cd-cont-section-list a:focus{
+  color: #000;
+}
+
+.cd-cont .cd-cont-section .cd-cont-section-more{
+  margin-left:30px;
+  display:none;
+}
+
+#breadcrumb{
+  background-color: #f5f5f5;
+}
+
+#language-select{
+	margin-top:10px;
+	float:right;
+}
+
+.search_div {
+  max-width : 75%;
+  margin : 0 auto;
+}
+
+.search-form{
+  padding:30px;
+}
+
+.search-result{
+	
+}
+
+.search-result .label{
+  /*background-color:#3d566d;*/
+  padding: 0px 4px;
+  font-size: 100%;
+  border-radius: 0px;
+  font-weight: normal;
+}
+
+.search-result .search-item{
+	
+}
+
+.search-result .search-item h3{
+	
+}
+
+.label.label-circle.label-default{
+  /*background-color: #19b698;*/
+}
+
+.navbar-header{
+   display: list-item;
+}
+@media (max-width: 768px){
+  .navbar-header a img {
+      margin-left: 17px;
+  }
+}
+
+  .navbar-toggle .icon-bar {
+  background: #fff;
+}
+
+#navigator ul.dropdown-menu.nav li{
+padding: 0px;
+}
+  #navigator ul.dropdown-menu.nav li a{
+  color : #000;
+}
+
+#navigator ul.dropdown-menu.nav li a:hover{
+  background : #ccc;
+}
+
+.sidebar-module ul{
+  padding-left : 30px;
+}
+
+/*언어*/
+.dropdown-menu.lang{
+  background-color: #323235;
+  -webkit-box-shadow: inset 0 -2px 5px rgba(0,0,0,.1);
+  box-shadow: inset 0 -2px 5px rgba(0,0,0,.1);
+}
+.dropdown-menu.lang li i{
+  visibility: hidden;
+}
+
+.dropdown-menu.lang li.actives i{
+  visibility: visible;
+  color: #99b125;
+}
+
+
+/*Buttons*/
+.btn {
+  border-color: #CCCCCC;
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  outline: none;
+  margin-bottom: 5px !important;
+  margin-left: 3px;
+  font-size: 13px;
+  padding: 7px 11px;
+}
+.btn-default,
+.btn-default:focus {
+  background-color: #FFFFFF;
+  border-color: #CCCCCC;
+  color: #5E5E5E;
+}
+.btn-default i {
+  color: #444;
+}
+.btn-default:active {
+  box-shadow: none;
+  background: #f5f5f5;
+}
+.btn-primary,
+.btn-primary:focus {
+  background-color: #7761a7;
+  border-color: transparent;
+  color: #fff;
+}
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary.active,
+.open .dropdown-toggle.btn-primary {
+  background-color: #816bb1;
+  border-color: transparent;
+}
+.btn-primary:active {
+  box-shadow: none;
+  background: #6d579d;
+}
+.btn-success,
+.btn-success:focus {
+  background-color: #19b698;
+  border-color: transparent;
+}
+.btn-success:hover,
+.btn-success:active,
+.btn-success.active,
+.open .dropdown-toggle.btn-success {
+  background-color: #23c0a2;
+  border-color: transparent;
+}
+.btn-success:active {
+  box-shadow: none;
+  background: #0fac8e;
+}
+.btn-info,
+.btn-info:focus {
+  background-color: #4aa3df;
+  border-color: transparent;
+}
+.btn-info:hover,
+.btn-info:active,
+.btn-info.active,
+.open .dropdown-toggle.btn-info {
+  background-color: #54ade9;
+  border-color: transparent;
+}
+.btn-info:active {
+  box-shadow: none;
+  background: #4099d5;
+}
+.btn-warning,
+.btn-warning:focus {
+  background-color: #f16e3f;
+  border-color: transparent;
+}
+.btn-warning:hover,
+.btn-warning:active,
+.btn-warning.active,
+.open .dropdown-toggle.btn-warning {
+  background-color: #fb7849;
+  border-color: transparent;
+}
+.btn-warning:active {
+  box-shadow: none;
+  background: #e76435;
+}
+.btn-danger,
+.btn-danger:focus {
+  background-color: #ea6153;
+  border-color: transparent;
+}
+.btn-danger:hover,
+.btn-danger:active,
+.btn-danger.active,
+.open .dropdown-toggle.btn-danger {
+  background-color: #f46b5d;
+  border-color: transparent;
+}
+.btn-danger:active {
+  box-shadow: none;
+  background: #e05749;
+}
+.btn-prusia,
+.btn-prusia:focus {
+  background-color: #3d566d;
+  border-color: transparent;
+  color: #fff;
+}
+.btn-prusia:hover,
+.btn-prusia:active,
+.btn-prusia.active,
+.open .dropdown-toggle.btn-prusia {
+  color: #fff;
+  background-color: #476077;
+  border-color: transparent;
+}
+.btn-prusia:active {
+  box-shadow: none;
+  background: #334c63;
+}
+.btn-dark,
+.btn-dark:focus {
+  background-color: #23262b;
+  border-color: transparent;
+  color: #fff;
+}
+.btn-dark:hover,
+.btn-dark:active,
+.btn-dark.active,
+.open .dropdown-toggle.btn-dark {
+  color: #fff;
+  background-color: #2d3035;
+  border-color: transparent;
+}
+.btn-dark:active {
+  box-shadow: none;
+  background: #191c21;
+}
+.btn-rad {
+  border-radius: 2px;
+  -webkit-border-radius: 2px;
+}
+.btn-group.horizontal &gt; .btn {
+  border-color: rgba(0, 0, 0, 0.08);
+}
+.btn i {
+  font-size: 14px;
+  margin-right: 2px;
+  display: inline-block;
+  min-width: 10px;
+}
+.btn-group-vertical {
+  margin: 3px 3px;
+}
+.btn-block {
+  width: 100%;
+}
+.close {
+  text-shadow: none;
+  font-size: 32px;
+  margin-top: -6px;
+}
+/*Transparent Buttons*/
+.btn-trans {
+  background-color: #fff;
+  border-color: #CCCCCC;
+  color: #5E5E5E;
+}
+.btn-trans.btn-primary {
+  background-color: #fff;
+  border-color: #7761a7;
+  color: #7761a7;
+}
+.btn-trans.btn-primary:hover {
+  background-color: #7761a7;
+  color: #fff;
+}
+.btn-trans.btn-success {
+  background-color: #fff;
+  border-color: #19b698;
+  color: #19b698;
+}
+.btn-trans.btn-success:hover {
+  background-color: #19b698;
+  color: #fff;
+}
+.btn-trans.btn-info {
+  background-color: #fff;
+  border-color: #4aa3df;
+  color: #4aa3df;
+}
+.btn-trans.btn-info:hover {
+  background-color: #4aa3df;
+  color: #fff;
+}
+.btn-trans.btn-warning {
+  background-color: #fff;
+  border-color: #f16e3f;
+  color: #f16e3f;
+}
+.btn-trans.btn-warning:hover {
+  background-color: #f16e3f;
+  color: #fff;
+}
+.btn-trans.btn-danger {
+  background-color: #fff;
+  border-color: #ea6153;
+  color: #ea6153;
+}
+.btn-trans.btn-danger:hover {
+  background-color: #ea6153;
+  color: #fff;
+}
+.btn-trans.btn-prusia {
+  background-color: #fff;
+  border-color: #3d566d;
+  color: #3d566d;
+}
+.btn-trans.btn-prusia:hover {
+  background-color: #3d566d;
+  color: #fff;
+}
+.btn-trans.btn-dark {
+  background-color: #fff;
+  border-color: #23262b;
+  color: #23262b;
+}
+.btn-trans.btn-dark:hover {
+  background-color: #23262b;
+  color: #fff;
+}
+/*Monochromatic tones*/
+/*MONO1*/
+.btn-mono1.btn-primary {
+  background-color: #6d579d;
+}
+.btn-mono1.btn-primary:hover {
+  background-color: #725ca2;
+}
+.btn-mono1.btn-success {
+  background-color: #0fac8e;
+}
+.btn-mono1.btn-success:hover {
+  background-color: #14b193;
+}
+.btn-mono1.btn-info {
+  background-color: #4099d5;
+}
+.btn-mono1.btn-info:hover {
+  background-color: #459eda;
+}
+.btn-mono1.btn-warning {
+  background-color: #e76435;
+}
+.btn-mono1.btn-warning:hover {
+  background-color: #ec693a;
+}
+.btn-mono1.btn-danger {
+  background-color: #e05749;
+}
+.btn-mono1.btn-danger:hover {
+  background-color: #e55c4e;
+}
+.btn-mono1.btn-prusia {
+  background-color: #334c63;
+}
+.btn-mono1.btn-prusia:hover {
+  background-color: #385168;
+}
+.btn-mono1.btn-dark {
+  background-color: #191c21;
+}
+.btn-mono1.btn-dark:hover {
+  background-color: #1e2126;
+}
+/*MONO2*/
+.btn-mono2.btn-primary {
+  background-color: #634d93;
+}
+.btn-mono2.btn-primary:hover {
+  background-color: #685298;
+}
+.btn-mono2.btn-success {
+  background-color: #05a284;
+}
+.btn-mono2.btn-success:hover {
+  background-color: #0aa789;
+}
+.btn-mono2.btn-info {
+  background-color: #368fcb;
+}
+.btn-mono2.btn-info:hover {
+  background-color: #3b94d0;
+}
+.btn-mono2.btn-warning {
+  background-color: #dd5a2b;
+}
+.btn-mono2.btn-warning:hover {
+  background-color: #e25f30;
+}
+.btn-mono2.btn-danger {
+  background-color: #d64d3f;
+}
+.btn-mono2.btn-danger:hover {
+  background-color: #db5244;
+}
+.btn-mono2.btn-prusia {
+  background-color: #294259;
+}
+.btn-mono2.btn-prusia:hover {
+  background-color: #2e475e;
+}
+.btn-mono2.btn-dark {
+  background-color: #0f1217;
+}
+.btn-mono2.btn-dark:hover {
+  background-color: #14171c;
+}
+/*MONO3*/
+.btn-mono3.btn-primary {
+  background-color: #594389;
+}
+.btn-mono3.btn-primary:hover {
+  background-color: #5e488e;
+}
+.btn-mono3.btn-success {
+  background-color: #00987a;
+}
+.btn-mono3.btn-success:hover {
+  background-color: #009d7f;
+}
+.btn-mono3.btn-info {
+  background-color: #2c85c1;
+}
+.btn-mono3.btn-info:hover {
+  background-color: #318ac6;
+}
+.btn-mono3.btn-warning {
+  background-color: #d35021;
+}
+.btn-mono3.btn-warning:hover {
+  background-color: #d85526;
+}
+.btn-mono3.btn-danger {
+  background-color: #cc4335;
+}
+.btn-mono3.btn-danger:hover {
+  background-color: #d1483a;
+}
+.btn-mono3.btn-prusia {
+  background-color: #1f384f;
+}
+.btn-mono3.btn-prusia:hover {
+  background-color: #243d54;
+}
+.btn-mono3.btn-dark {
+  background-color: #05080d;
+}
+.btn-mono3.btn-dark:hover {
+  background-color: #0a0d12;
+}
+/*MONO4*/
+.btn-mono4.btn-primary {
+  background-color: #4f397f;
+}
+.btn-mono4.btn-primary:hover {
+  background-color: #543e84;
+}
+.btn-mono4.btn-success {
+  background-color: #008e70;
+}
+.btn-mono4.btn-success:hover {
+  background-color: #009375;
+}
+.btn-mono4.btn-info {
+  background-color: #227bb7;
+}
+.btn-mono4.btn-info:hover {
+  background-color: #2780bc;
+}
+.btn-mono4.btn-warning {
+  background-color: #c94617;
+}
+.btn-mono4.btn-warning:hover {
+  background-color: #ce4b1c;
+}
+.btn-mono4.btn-danger {
+  background-color: #c2392b;
+}
+.btn-mono4.btn-danger:hover {
+  background-color: #c73e30;
+}
+.btn-mono4.btn-prusia {
+  background-color: #152e45;
+}
+.btn-mono4.btn-prusia:hover {
+  background-color: #1a334a;
+}
+.btn-mono4.btn-dark {
+  background-color: #000003;
+}
+.btn-mono4.btn-dark:hover {
+  background-color: #000308;
+}
+/*Specific icons size*/
+.btn-lg {
+  padding: 12px 14px;
+  font-size: 15px;
+  font-weight: 300;
+}
+.btn-lg i {
+  font-size: 18px;
+}
+.btn-sm {
+  padding: 4px 7px;
+  font-size: 12px;
+}
+.btn-sm i {
+  font-size: 14px;
+}
+.btn-xs {
+  padding: 2px 6px;
+  font-size: 11px;
+}
+.btn-xs i {
+  font-size: 12px;
+}
+.btn-shadow {
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.12);
+}
+.btn-shadow.btn-success {
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+.btn-shadow.btn-primary {
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+.btn-shadow.btn-warning {
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+.btn-shadow.btn-danger {
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+.btn-shadow.btn-info {
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+.btn-shadow.btn-prusia {
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+.btn-shadow.btn-dark {
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+.btn-flat,
+.btn-flat:focus {
+  box-shadow: none;
+}
+.btn-primary .caret,
+.btn-success .caret,
+.btn-warning .caret,
+.btn-danger .caret,
+.btn-info .caret,
+.btn-prusia .caret,
+.btn-dark .caret {
+  border-top-color: #FFFFFF;
+}
+.btn-group-vertical &gt; .btn {
+  margin-bottom: 0 !important;
+}
+.btn-group-vertical &gt; .btn:first-child {
+  margin-left: 0;
+  border-radius: 0 !important;
+  -webkit-border-radius: 0 !important;
+}
+.btn-group-vertical &gt; .btn:last-child {
+  border-radius: 0 !important;
+  -webkit-border-radius: 0 !important;
+}
+/*Social buttons*/
+.btn-facebook i {
+  color: #3b5998;
+}
+.btn-twitter i {
+  color: #00aced;
+}
+.btn-google-plus i {
+  color: #dd4b39;
+}
+.btn-dribbble i {
+  color: #ea4c89;
+}
+.btn-linkedin i {
+  color: #0e76a8;
+}
+.btn-youtube i {
+  color: #c4302b;
+}
+.btn-pinterest i {
+  color: #c8232c;
+}
+.btn-tumblr i {
+  color: #34526f;
+}
+.btn-flickr i {
+  color: #ff0084;
+}
+.btn-facebook.bg {
+  background: #3b5998;
+  color: #fff;
+  border: 0;
+}
+.btn-twitter.bg {
+  background: #00aced;
+  color: #fff;
+  border: 0;
+}
+.btn-google-plus.bg {
+  background: #dd4b39;
+  color: #fff;
+  border: 0;
+}
+.btn-dribbble.bg {
+  background: #ea4c89;
+  color: #fff;
+  border: 0;
+}
+.btn-linkedin.bg {
+  background: #0e76a8;
+  color: #fff;
+  border: 0;
+}
+.btn-youtube.bg {
+  background: #c4302b;
+  color: #fff;
+  border: 0;
+}
+.btn-pinterest.bg {
+  background: #c8232c;
+  color: #fff;
+  border: 0;
+}
+.btn-tumblr.bg {
+  background: #34526f;
+  color: #fff;
+  border: 0;
+}
+.btn-flickr.bg {
+  background: #0063dc;
+  color: #fff;
+  border: 0;
+}
+.btn-github.bg {
+  background: #333;
+  color: #fff;
+  border: 0;
+}
+/*active socials*/
+.btn-facebook.bg:active,
+.btn-facebook.bg.active {
+  background: #274584;
+}
+.btn-twitter.bg:active,
+.btn-twitter.bg.active {
+  background: #0098d9;
+}
+.btn-google-plus.bg:active,
+.btn-google-plus.bg.active {
+  background: #c93725;
+}
+.btn-dribbble.bg:active,
+.btn-dribbble.bg.active {
+  background: #d63875;
+}
+.btn-linkedin.bg:active,
+.btn-linkedin.bg.active {
+  background: #006294;
+}
+.btn-youtube.bg:active,
+.btn-youtube.bg.active {
+  background: #b01c17;
+}
+.btn-pinterest.bg:active,
+.btn-pinterest.bg.active {
+  background: #b40f18;
+}
+.btn-tumblr.bg:active,
+.btn-tumblr.bg.active {
+  background: #203e5b;
+}
+.btn-flickr.bg:active,
+.btn-flickr.bg.active {
+  background: #004fc8;
+}
+.btn-github.bg:active,
+.btn-github.bg.active {
+  background: #1f1f1f;
+}
+.btn.bg i {
+  color: #FFF;
+}
+.btn:active,
+.btn.active {
+  box-shadow: none;
+}
+.btn:focus {
+  outline: none;
+}
+.btn-group.btn-blurbg {
+  background: url("../images/blur_bg.png") no-repeat;
+  padding: 40px;
+  margin-bottom: 20px;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.15);
+}
+.btn.btn-transparent {
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  border-left: 1px solid rgba(255, 255, 255, 0.4);
+  border-right: 1px solid rgba(255, 255, 255, 0.4);
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.35);
+}
+.btn.btn-transparent:hover {
+  background: rgba(255, 255, 255, 0.32);
+}
+.video-player {
+  position: relative;
+  display: inline-block;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.15);
+}
+.video-player video {
+  display: block;
+  max-width: 320px;
+  width: 100%;
+}
+.video-player .btn-controls {
+  text-align: center;
+  bottom: 5px;
+  position: absolute;
+  width: 100%;
+}
+.video-player .btn-controls .btn-group {
+  margin: 0;
+}
+.video-player .btn-controls .btn-group {
+  float: none;
+}
+button::-moz-focus-inner {
+  border: 0;
+}
+.btn-group .dropdown-menu {
+  border-radius: 1px;
+}
+
+/*Nifty Modals*/
+.md-content {
+  overflow: hidden;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border: 0;
+  background: #fff;
+  color: #555;
+}
+.md-content .modal-header {
+  border-bottom: 0;
+}
+.md-content h4,
+.modal-content h4 {
+  font-weight: 400;
+}
+.md-content h3,
+.modal-content h3 {
+  font-weight: 300;
+  margin-top: 0;
+}
+.md-content h2 {
+  margin: 0;
+}
+.md-content .modal-footer {
+  margin-top: 0;
+  background: #FBFBFB;
+  border-radius: 0 0 5px 5px;
+  -webkit-border-radius: 0 0 5px 5px;
+}
+.md-show.md-effect-12 ~ .md-overlay {
+  background: #7761a7;
+}
+body.modal-open,
+.modal-open .navbar-fixed-top,
+.modal-open .navbar-fixed-bottom {
+  margin-right: 0;
+}
+.modal {
+  overflow: auto;
+}
+@media (min-width: 768px) and (max-width: 979px) {
+  .custom-width {
+    width: 60%;
+    max-width: none;
+  }
+}
+@media (max-width: 767px) {
+  .custom-width {
+    width: 90%;
+    max-width: none;
+  }
+}
+
+/*검색결과*/
+.not_found {
+  padding : 30px;
+  background-color: rgba(255, 0, 0, 0.1);
+  border-radius:3px;
+}
+
+.not_found p em{
+  font-weight: bolder;
+  font-size: 20px;
+
+}
+
+
+/*
+ * Pulse animation
+*/
+  
+.animated { 
+    -webkit-animation-duration: 3s; 
+    animation-duration: 3s; 
+    -webkit-animation-fill-mode: both; 
+    animation-fill-mode: both; 
+    animation-iteration-count: 5; 
+    -webkit-animation-iteration-count: 5;
+} 
+
+@-webkit-keyframes shake { 
+    0%, 100% {-webkit-transform: translateY(0);} 
+    10%, 30%, 50%, 70%, 90% {-webkit-transform: translateY(-1px);} 
+    20%, 40%, 60%, 80% {-webkit-transform: translateY(1px);} 
+} 
+@keyframes shake { 
+    0%, 100% {transform: translateY(0);} 
+    10%, 30%, 50%, 70%, 90% {transform: translateY(-1px);} 
+    20%, 40%, 60%, 80% {transform: translateY(1px);} 
+} 
+.shake { 
+    -webkit-animation-name: shake; 
+    animation-name: shake; 
+}
+
+#search_top #searchForm{
+	    margin: 0;
+    padding: 0;
+    height: 0;
+margin-top: 5px;
+}
+#search_top #searchForm input[type="text"] {
+    background: url(https://s3-ap-northeast-1.amazonaws.com/igaw-csworks/icons/page3/search-white.png) no-repeat 10px 6px #444;
+    border: 0 none;
+    font: bold 12px;
+    color: #d7d7d7;
+    width:150px;
+    padding: 6px 15px 6px 35px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.3); 
+    -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 3px rgba(0, 0, 0, 0.2) inset;
+    -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 3px rgba(0, 0, 0, 0.2) inset;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 3px rgba(0, 0, 0, 0.2) inset;
+    -webkit-transition: all 0.7s ease 0s;
+    -moz-transition: all 0.7s ease 0s;
+    -o-transition: all 0.7s ease 0s;
+    transition: all 0.7s ease 0s;
+    }
+
+#search_top #searchForm input[type="text"]:focus {
+    background: url(https://s3-ap-northeast-1.amazonaws.com/igaw-csworks/icons/page3/search-dark.png) no-repeat 10px 6px #fcfcfc;
+    color: #6a6f75;
+    width: 200px;
+    -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(0, 0, 0, 0.9) inset;
+    -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(0, 0, 0, 0.9) inset;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(0, 0, 0, 0.9) inset;
+    text-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+    }
+#search_top #searchForm button{
+	display: none;
+}
+#search_top #searchForm .input-group {
+	position: initial;
+    display: initial;
+    border-collapse: initial;
+}
+</style>
+
+<script type="text/javascript">
+    $(function(){
+	$('#search_top #searchForm input')
+    	.css('height','28px')
+    	.attr({size: "40", placeholder: "Search..."});
+});
+
+$(function(){
+	$('.navbar-collapse ul').addClass("nav navbar-nav horizontal");
+  	$('#breadcrumb ul').addClass('breadcrumb container');
+  	$('.table').addClass('table-striped');   
+});
+
+//Article Side Navi Start
+$(function(){
+	//var url = window.location;
+  	//var rending_url = url.split("?utm_source")[0];
+  	//console.log(rending_url);
+  
+    console.log("toc plugin");
+    var article_url = window.location.href;
+   	if(article_url.search('adpopcorn-') != -1 || article_url.search('adbrix_') != -1 || article_url.search('liveops-push-and-noti') != -1){       
+        if(article_url.search("adbrix_ios") != -1 || article_url.search("adbrix_unity") != -1){
+            hideIndexFromRight();
+            return;
+        }
+        
+        addIndexToRight();
+        
+    }else{
+       hideIndexFromRight();
+    }
+    
+  
+  function addIndexToRight(){
+    $('.article-navi-sidebar-module').show();
+    $('.article-navi-footer').show();
+
+    $('.article-navi-footer').toc({
+    'selectors' : 'blockquote, h4',
+    'container' : '.article-content',
+    'smoothScrolling': false,
+    'prefix' : 'toc',
+    'anchorName' : function(i, heading, prefix) { //custom function for anchor name        
+          //console.log( i + " Nodes title is : " + heading.textContent);
+          return prefix+i;          	
+        }
+    });
+    
+    //navi scrolled
+    var eTop = $('div.article-navi-footer').parent();
+    //var eTop = $('div.blog-sidebar').parent();
+    var _offset = $('#with-out-navi').outerHeight(true) + $('#with-out-navi').offset().top;
+    
+    $(window).scroll(function() {
+        if(_offset == Math.max(_offset, $(window).scrollTop() + 5) ){
+            $(eTop).removeClass('article-navi-fix');
+        } else {
+        ArticleNaviFixHeight();
+        };
+    });
+    
+    $(window).resize(function(){
+        ArticleNaviFixHeight();
+    });
+    
+  }
+
+  function hideIndexFromRight(){
+    $('.article-navi-footer').hide();
+  }
+
+  function ArticleNaviFixHeight(){
+    var eTop = $('div.article-navi-footer').parent();
+    $(eTop).removeClass('article-navi-fix');
+    
+    var navi_height = 0, _h = 0;
+    
+    $(".article-navi-sidebar-module").children().each(function(){
+      navi_height += $(this).outerHeight(true);
+    });
+    
+    navi_height += $(".article-navi-sidebar-module").outerHeight(true) - $(".article-navi-sidebar-module").height()
+    
+    if( $(window).height == Math.max($(window).height(), navi_height) ){
+      _h = navi_height;
+    }else{
+      _h = $(window).height() - $(".blog-footer").height() - 25;
+    }
+    
+    $(eTop).css({
+        "width": $($(eTop).siblings()[0]).outerWidth() + 30 + 'px',
+        "height" : _h + 'px',
+        "max-height" : navi_height + 'px',
+        "overflow-y" : "auto",
+    });
+    
+    if($(".article-navi-sidebar-module").length != 0){
+      if($(window).scrollTop() == Math.max($(window).scrollTop(), $(".article-navi-sidebar-module").offset().top)){
+        $(eTop).addClass('article-navi-fix');
+    	}
+    }
+  }
+});
+
+
+//Article Side Navi End
+
+$(function(){
+  var isko = window.location.pathname.toLowerCase().search("ko");
+  var isJa = window.location.pathname.toLowerCase().search("ja");  
+  var isZhCn = window.location.pathname.toLowerCase().search("zh-cn");
+    //test mode setting
+  var isTest = window.location.search.toString().search("test");
+  var isCategory = $(location).attr('pathname').indexOf('Category');
+  var isSecion = $(location).attr('pathname').indexOf('Section');
+  var isArticle = $(location).attr('pathname').indexOf('Article');
+  
+  if(isTest == -1){ // live mode
+  	$('#main-noti-block-test').hide();    
+    //GATE PAGE OPEN 161117, Mike
+    $('.front-content-area').hide();
+    $('.front-gate-page-sample-area').show();    
+  }else{    
+    console.log('test mode'); // Test mode launched.
+    $('.front-content-area').hide();
+    $("body").attr('style','background-color:rgb(255, 255, 255) !important');
+    $("#main_noti_block_top_new").show();
+  }
+  
+  function HideHelpMain(){
+    $(".container").removeClass("gate-new");
+      $("body").attr('style','background-color:rgb(255, 255, 255) !important');
+      $('#surveyBtn').hide();
+      $('.csworks-quick-widget').hide();        
+      $('.front-content-area').show();
+      $('.front-gate-page-sample-area').hide(); // open gate page for korean language
+  }
+  
+  function IsHome(){
+    //var url = window.location.href.toLowerCase().split("/")
+    //return (url[url.length -1] === "content");
+    var url = window.location.pathname.toLowerCase().replace(/\//ig,'');
+	return (url == 'hcko3_3content' || url == 'hcja3_3content');
+  }
+    
+  if(isko != 4){     
+    if(isJa != 4){
+      HideHelpMain();
+    }
+  }
+
+  if(!IsHome()){
+    console.log("bg changer");
+    $("body").attr('style','background-color:rgb(255, 255, 255) !important');
+  } 
+
+  
+  if(isJa == 4){    	
+        $('body').css('font-family', 'Meiryo');
+     	$('h1,h2,h3,h4,h5,h6').css('font-family','Meiryo');
+      	//$('.h1,.h2,.h3,.h4,.h5,.h6').css('font-family','Meiryo !important');
+        $(window).load(function () {
+  			$('.hljs' ).each(function () {
+    			this.style.setProperty( 'font-family', 'Meiryo', 'important' );
+      		});
+		});
+  	}
+  	
+  	if(isZhCn == 4){
+      $('body').css('font-family', 'Microsoft YaHei, san-serif');
+      $('h1,h2,h3,h4,h5,h6').css('font-family','Microsoft YaHei, san-serif');
+      $('.h1,.h2,.h3,.h4,.h5,.h6').css('font-family','Microsoft YaHei, san-serif');
+      $('span').css('font-family', 'Microsoft YaHei, san-serif');      
+   }
+
+  
+  
+  var shareStr = window.location.search;
+  
+  //fa icon font resetting
+  $('.fa-info-circle').css('font-family','FontAwesome');
+    
+
+});
+
+$(function(){
+  $(".table").removeAttr("style");
+  
+  function iframeResize(){
+    var D = document;
+    var height = Math.max(
+      D.documentElement.scrollHeight,
+      D.body.offsetHeight, D.documentElement.offsetHeight,
+      D.body.clientHeight
+    );
+    
+    var width = Math.max(
+      D.body.scrollWidth, D.documentElement.scrollWidth,
+      D.body.offsetWidth, D.documentElement.offsetWidth,
+      D.body.clientWidth, D.documentElement.clientWidth
+    );
+    var _data = {
+      "height" : height,
+      "width" : width,
+      "path" : window.location.pathname
+    }
+    console.log(_data);
+    parent.postMessage(JSON.stringify(_data),"*");
+  }
+  $(window).load(function() {
+    iframeResize();
+	});
+});
+
+
+
+$(function(){
+  
+  	var gg_check_slack_bot_url = 'https://hooks.slack.com/services/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';// Webhook URL
+    var message = "GCLID DETECTED!!! \n";
+  	var page_url = window.location.href;// Text to post
+    var text = message + page_url;
+  
+    var isGoogle = window.location.search.toString().search("gclid");
+  	if(isGoogle == 1) {
+  		$.ajax({
+	        data: 'payload=' + JSON.stringify({
+            	"text": text
+        	}),
+        	dataType: 'json',
+        	processData: false,
+        	type: 'POST',
+        	url: gg_check_slack_bot_url
+    	});
+   		console.log("gclid detected!");
+  	}
+});
+
+//FAQ
+
+$(function(){
+
+   //faq tab btn
+  $('.faq-tab').off('click').on('click', function(){
+  
+    var _this = $(this);
+    var _type = $(this).data('type');
+    
+    $('.faq-tab').removeClass('active')
+    _this.addClass('active')
+        
+    if(_type == 0){
+      all_btn('link_board');
+      all_btn('answer');
+      $('.list_board').show();
+    }else{
+      $('.list_board').hide();
+      $('.tab'+_type).show();
+    }   
+  });
+  
+  //질문 link
+   $('.link_board').off('click').on('click', function(){
+    var _this = $(this);
+    var _this_class = _this.hasClass('active');
+     
+    var _this_parent = _this.parent();
+    var _this_parent_is_normal = _this_parent.hasClass('normal');
+     
+    var _this_next = _this_parent.next();
+    var _this_next_is_normal = _this_next.hasClass('normal');
+     
+    var _this_before = _this.before().prev();
+    var _this_before_is_normal = _this_before.hasClass('glyphicon-chevron-right'); 
+  
+    if(_this_class == true ){
+      _this.removeClass('active');
+    }else{
+      _this.addClass('active');
+    }
+   
+    if(_this_next_is_normal == true ){
+    //activated
+      _this_next.removeClass('normal');
+      _this_next.addClass('active');
+     }else{
+    //deactivated
+      _this_next.removeClass('active');
+      _this_next.addClass('normal');
+     }
+
+    if(_this_parent_is_normal == true ){
+    //activated
+	  _this_parent.removeClass('normal');
+      _this_parent.addClass('active');
+      _this_before.removeClass('glyphicon-chevron-right');
+      _this_before.addClass('active glyphicon-chevron-down');      
+    }else{
+    //deactivated
+      _this_parent.removeClass('active');
+      _this_parent.addClass('normal');
+      _this_before.removeClass('active glyphicon-chevron-down');
+      _this_before.addClass('glyphicon-chevron-right');      
+    }     
+  });
+  
+  
+
+  
+});
+</script>
+
+<script type="text/javascript">
+    !function (n, o) { window.adbrix_core = o, o.queue = [], o.invoke || (o.invoke = function (n) { o.queue.push(n) }), window.adbrix = function () { var n = Array.prototype.slice.call(arguments); return o.invoke(n) } }(document, window.adbrix_core || []);
+    adbrix('init', {
+            appkey: 'ljyytquOh0y4UzW89uBtnA'
+    });
+</script>
+<script src="./IGAWorks Help Center_files/abx.min.js.ダウンロード"></script>
+
+<link href="./IGAWorks Help Center_files/font-awesome.min(1).css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+<style type="text/css">
+[lang=ko] {
+    font-family: NanumGothic;
+}
+  
+[lang=en] {
+    font-family: NanumGothic;
+}
+
+[lang=ja] {
+    font-family: Meiryo !important;
+}
+
+[lang=zh-cn] {
+    font-family: Microsoft YaHei, san-serif !iimportant;
+}
+
+  .csworks-aside-collapse {
+    width: 250px;
+    height: 800px;
+    display: none;
+    background: lightblue;
+    z-index: 1;
+    position: absolute;
+  } 
+  
+</style>
+
+<div class="blog-masthead">
+    <div class="container">
+      <div class="navbar-header" style="margin-right:50px !important;">
+            <button class="navbar-toggle collapsed csworks-test" type="button" data-toggle="collapse" data-target=".csworks-aside-collapse" style="top: -15px; margin-bottom: -2px; float:left">
+                  <span class="sr-only">Toggle navigation</span>         
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>       
+               </button>
+            <a href="http://help.igaworks.com/hc/ko/3_3/content" style="display: list-item;  list-style-type: none;  width: 150px;  margin-top: 17px !important;  margin-right: 17px;">
+                <img src="./IGAWorks Help Center_files/helpcenter_logo_161117.png" alt=""></a>
+        </div>
+        <nav id="navigator" class="collapse navbar-collapse bs-navbar-collapse">
+            
+<ul class="nav navbar-nav horizontal">
+    <li class=""><a href="http://help.igaworks.com/hc/ko/3_3/content/Category/17">FAQ / 일반</a></li>
+    <li class="active"><a href="http://help.igaworks.com/hc/ko/3_3/content/Category/16">SDK 연동</a></li>
+    <li class=""><a href="http://help.igaworks.com/hc/ko/3_3/content/Category/21">이용 방법 안내</a></li>
+</ul> 
+            <ul class="nav navbar-nav navbar-right horizontal" style="margin-top: 6px;">
+                <li> 
+<div class="btn-group" role="group">
+    <button type="button" class="btn btn-default btn-sm dropdown-toggle lang" data-toggle="dropdown" aria-expanded="false" style="background-color: rgba(0,0,0,0);border: 0px;">
+        <img src="./IGAWorks Help Center_files/ic_ko.png" title="ko">
+        <span class="caret" style="border-top: 5px solid; border-right: 5px solid transparent; border-left: 5px solid transparent; color: white;"></span>
+    </button>
+    <ul class="dropdown-menu lang nav navbar-nav horizontal" role="menu" style="min-width: 68px;">
+            <li class="actives">
+                <a href="http://help.igaworks.com/hc/ko/3_3/Content">
+                    <img src="./IGAWorks Help Center_files/ic_ko.png" title="ko"> <i class="fa fa-check"></i>
+                </a>
+            </li>
+            <li class="">
+                <a href="http://help.igaworks.com/hc/en/3_3/Content">
+                    <img src="./IGAWorks Help Center_files/ic_en.png" title="en"> <i class="fa fa-check"></i>
+                </a>
+            </li>
+            <li class="">
+                <a href="http://help.igaworks.com/hc/ja/3_3/Content">
+                    <img src="./IGAWorks Help Center_files/ic_ja.png" title="ja"> <i class="fa fa-check"></i>
+                </a>
+            </li>
+            <li class="">
+                <a href="http://help.igaworks.com/hc/zh-cn/3_3/Content">
+                    <img src="./IGAWorks Help Center_files/ic_zh-cn.png" title="zh-cn"> <i class="fa fa-check"></i>
+                </a>
+            </li>
+    </ul>
+</div>  </li>
+            </ul>
+          	<ul class="nav navbar-nav navbar-right horizontal" id="search_top">
+                <li> 
+<form id="searchForm" action="http://help.igaworks.com/hc/ko/3_3/Content/Search" method="get">
+    <div class="input-group">
+        <input type="text" class="form-control" name="search_text" style="height: 28px;" placeholder="Search..." size="40">
+        <span class="input-group-btn">
+            <button href="#" type="button" class="btn btn-success" onclick="this.parentNode.parentNode.parentNode.submit()" style="margin-bottom: 0px !important;height: 44px;width: 50px;font-size: 15px;"><i class="fa fa-search"></i></button>
+        </span>
+    </div>
+</form> </li>
+            </ul>
+        </nav>
+    </div>
+</div>
+<div class="blog-notice" style="padding: 20px 0px; display:none;">
+    <div class="container">
+      <div class="row" id="main_noti_block_top_new">
+        {{notice}}
+      </div>
+  </div>
+</div>
+
+<script type="text/javascript" src="./IGAWorks Help Center_files/wcslog.js.ダウンロード"></script>
+<script type="text/javascript">
+if(!wcs_add) var wcs_add = {};
+wcs_add["wa"] = "9cd8d76951f944";
+wcs_do();
+</script>
+
+
+<div id="breadcrumb">
+	 
+<ul class="breadcrumb container">
+    <li><a href="http://help.igaworks.com/hc/ko/3_3/content">Home</a></li> 
+
+            <li><a href="http://help.igaworks.com/hc/ko/3_3/content/Category/16">SDK 연동</a></li> 
+    
+            <li><a href="http://help.igaworks.com/hc/ko/3_3/content/Section/13">공통연동</a></li>
+    
+        <li>How to set Deeplink?</li> 
+</ul> 
+</div>
+<div class="container">
+	<div class="row">
+		<div class="col-sm-9 blog-main">
+			<div class="blog-post">
+				 
+    <div class="article-header">
+        How to set Deeplink?
+    </div>
+    <div class="article-regist-date">
+        7/14/2016 5:51:03 PM
+    </div>
+    <div class="article-content">
+        <p></p><p></p><h3><span style="font-weight: bold;">딥링크 설정하기</span></h3>
+<p>이 가이드는 앱에 딥링크 기능을 설정하여 웹브라우저에서 "myapp://"
+    와 같은 딥링크 URL로 앱을 실행할 수 있도록 안내합니다.<br>IGAWorks 서비스 내에세 딥링크 기능을 문제없이 사용하기 위해 본 가이드를 반드시 확인 해주세요.</p>
+
+순서<br>&nbsp;<a href="http://help.igaworks.com/hc/ko/3_3/content/Article/how-to-set-deeplink#deeplink-set-android">1. Android 딥링크 설정</a>&nbsp;/&nbsp;<a href="http://help.igaworks.com/hc/ko/3_3/content/Article/how-to-set-deeplink#deeplink-set-android-check">필수 확인사항!</a><br>
+&nbsp;<a href="http://help.igaworks.com/hc/ko/3_3/content/Article/how-to-set-deeplink#deeplink-set-ios">2. iOS 딥링크 설정</a>&nbsp;/&nbsp;<a href="http://help.igaworks.com/hc/ko/3_3/content/Article/how-to-set-deeplink#deeplink-set-ios-check">필수 확인사항!</a><br>
+
+<hr>
+<h3><div id="deeplink-set-android"><span style="font-weight: bold;">Android Deep Link Settings</span></div></h3>
+<p>안드로이드 앱에 딥링크 기능을 설정하기 위해서는 AndroidManifest.xml
+    파일에 아래와 같은 intent-filter를 추가해야 합니다.</p>
+<div class="zero-clipboard"><span class="btn-clipboard">Copy</span></div><div class="highlight"><pre><span style="white-space: pre-wrap;">&lt;intent-filter&gt;
+    &lt;action android:name="android.intent.action.VIEW" /&gt;
+    &lt;category android:name="android.intent.category.DEFAULT" /&gt;
+    &lt;category android:name="android.intent.category.BROWSABLE" /&gt;
+    &lt;data android:scheme="YOUR_SCHEME_NAME_HERE" /&gt;
+&lt;/intent-filter&gt;</span><br></pre></div>
+    <p><br></p>
+    <p>scheme 값을 정하지 못하셨다면, 애드브릭스 앱키를 이용하셔도
+        됩니다.</p>
+    <p>애드브릭스 앱키가 123456이라면 아래 예시처럼 AndroidManifest.xml
+        파일을 수정하시면 되겠습니다.</p>
+    <div class="zero-clipboard"><span class="btn-clipboard">Copy</span></div><div class="highlight"><pre><code class="html hljs xml"><span class="hljs-tag">&lt;<span class="hljs-title">activity</span> <span class="hljs-attribute">android:label</span>=<span class="hljs-value">"@string/app_name"</span> <span class="hljs-attribute">android:launchMode</span>=<span class="hljs-value">"singleTask"</span> <span class="hljs-attribute">......</span> &gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">intent-filter</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">action</span> <span class="hljs-attribute">android:name</span>=<span class="hljs-value">"android.intent.action.VIEW"</span> /&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">category</span> <span class="hljs-attribute">android:name</span>=<span class="hljs-value">"android.intent.category.DEFAULT"</span> /&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">category</span> <span class="hljs-attribute">android:name</span>=<span class="hljs-value">"android.intent.category.BROWSABLE"</span> /&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">data</span> <span class="hljs-attribute">android:scheme</span>=<span class="hljs-value">"</span></span><span style="font-weight: bold;"><span class="hljs-tag"><span class="hljs-value">adbrix123456</span></span></span><span class="hljs-tag"><span class="hljs-value">"</span>/&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">intent-filter</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">activity</span>&gt;</span></code></pre></div>
+    <p><span style="color: rgb(206, 0, 0); font-style: italic; font-weight: bold; text-decoration-line: underline;">주의! 딥링크 트랙킹이 원할하게 작동할 수 있도록 Activity 는 singleTask 를 사용해 주시길 부탁드립니다.</span><br></p>
+    <h4><span style="font-weight: bold;">딥링크 동작 확인</span></h4>
+    <p><span style="color: inherit;">아래 절차를 따라 딥링크가 정상 설정되었는지 확인할 수 있습니다.</span><br></p>
+    <ol>
+        <li>위 내용을 적용한 앱을 빌드하고 실행합니다.</li>
+        <li>윈도우 커맨드 창을 실행합니다. ( Win+R키, cmd 입력)</li>
+        <li>adb shell 을 실행합니다.<br></li>
+    
+    <div class="zero-clipboard"><span class="btn-clipboard">Copy</span></div><div class="highlight"><pre><span style="white-space: pre-wrap;">C:/&gt;adb shell
+</span></pre></div>
+    
+        <li>adb 명령어를 입력합니다. 위 예시와 같이 설정하였을 때에는
+            adbrix123456:// 을 [URI] 부분에 입력합니다.</li>
+        <div class="zero-clipboard"><span class="btn-clipboard">Copy</span></div><div class="highlight"><pre><code class="java hljs"><span style="font-weight: bold;">[명령어]</span>
+am start -a android.intent.action.VIEW -d <span style="color: rgb(206, 0, 0);">[URI] [PackageName]
+
+</span><span style="font-weight: bold;">[예시]</span>
+am start -a android.intent.action.VIEW -d <span class="hljs-string">"adbrix123456://"</span> com.myapp.packageName</code></pre></div>
+            </ol>
+    
+    <p><span style="line-height: 22px; color: inherit;"><br></span></p>
+    <p><span style="color: inherit;">위와 같이 테스트를 진행하였을 때, 앱이 실행이 된다면 정상적으로 딥링크 설정이 된 것입니다.</span><br></p>
+    <p><a href="https://developer.android.com/training/app-indexing/deep-linking.html" target="_blank"><span style="color: rgb(0, 0, 255);"><span style="font-weight: bold;">Google Developer Guide</span></span></a>를 참고하시면 딥링크 설정에 대한 더 상세한 정보를 얻으실 수 있습니다.</p>
+    <p><br></p><h4><span style="font-weight: bold;">딥링크 오픈 트래킹</span></h4><p>딥링크 설정을 통해서 딥링크 트래킹링크를 통한 앱 오픈이 가능하게 되었습니다.</p><div id="deeplink-set-android-check"><p>딥링크 트래킹링크 리포팅을 위해 안드로이드 개발환경에서는 몇가지 예외적인 케이스들에 대해서 주의를 해야 합니다.</p><p></p><p><img src="./IGAWorks Help Center_files/fb_reeng_flow_chart_v3.png" style="width: 100%;" class="img-thumbnail"><br></p><p><span style="color: inherit;">위 플로우 차트를 참고하여 각 예외 케이스들에 대한 솔루션을 적용합니다.</span><br></p><p><br></p><h5><span style="font-weight: bold; text-decoration: underline;">솔루션 A. &nbsp;앱 런치모드(LaunchMode)를 SingleTask 이외의 모드 혹은 외부 툴을 사용하는 경우.</span></h5><p><span style="color: inherit;">어떠한 목적에 의해서 Standard, SingleTop 등 SingleTask 이외의 모드 혹은 Unity, Cocos2dx 와 같은 외부 툴을 사용하시는 경우에는 딥링크를 통한 앱 오픈 시에 딥링크 트래킹이 정상적으로 되지 않는 경우가 발생합니다.</span><br></p><p>따라서 아래의 가이드를 참고하여 AndroidManifest.xml 파일에 IgawDefaultDeeplinkActivity 를 기본 딥링크 추가합니다.</p><div class="zero-clipboard"><span class="btn-clipboard">Copy</span></div><div class="highlight"><pre><code class="html hljs xml"><span class="hljs-tag">&lt;<span class="hljs-title">activity</span>
+    <span class="hljs-attribute">android:name</span>=<span class="hljs-value">"</span></span><span style="background-color: yellow;"><span style="font-weight: bold;"><span class="hljs-tag"><span class="hljs-value">com.igaworks.IgawDefaultDeeplinkActivity</span></span></span></span><span class="hljs-tag"><span class="hljs-value">"</span>
+    <span class="hljs-attribute">android:label</span>=<span class="hljs-value">"@string/app_name"</span>
+    <span class="hljs-attribute">android:launchMode</span>=<span class="hljs-value">"singleTask"</span>
+    <span class="hljs-attribute">android:theme</span>=<span class="hljs-value">"@android:style/Theme.Translucent.NoTitleBar.Fullscreen"</span>
+    <span class="hljs-attribute">android:noHistory</span>=<span class="hljs-value">"true"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">intent-filter</span> <span class="hljs-attribute">android:label</span>=<span class="hljs-value">"@string/app_name"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">action</span> <span class="hljs-attribute">android:name</span>=<span class="hljs-value">"android.intent.action.VIEW"</span> /&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">category</span> <span class="hljs-attribute">android:name</span>=<span class="hljs-value">"android.intent.category.DEFAULT"</span> /&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">category</span> <span class="hljs-attribute">android:name</span>=<span class="hljs-value">"android.intent.category.BROWSABLE"</span> /&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">!—딥링크</span> 스키마와 호스트를 입력합니다<span class="hljs-attribute">.</span> <span class="hljs-attribute">--</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">data</span> <span class="hljs-attribute">android:scheme</span>=<span class="hljs-value">"</span></span><span style="background-color: yellow;"><span style="font-weight: bold;"><span class="hljs-tag"><span class="hljs-value">YOUR_SCHEME_NAME_HERE</span></span></span></span><span class="hljs-tag"><span class="hljs-value">"</span> <span class="hljs-attribute">android:host</span>=<span class="hljs-value">"</span></span><span style="background-color: yellow;"><span style="font-weight: bold;"><span class="hljs-tag"><span class="hljs-value">YOUR_HOST_NAME_HERE</span></span></span></span><span class="hljs-tag"><span class="hljs-value">"</span> /&gt;</span>
+       
+    <span class="hljs-tag">&lt;/<span class="hljs-title">intent-filter</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">!—딥링크</span> 트래킹 이후에 메인액티비티로 리디렉션 처리를 하기 위해 메인 액티비티의 풀 패키지 네임을 입력합니다<span class="hljs-attribute">.</span>" <span class="hljs-attribute">--</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">meta-data</span> <span class="hljs-attribute">android:name</span>=<span class="hljs-value">"IgawRedirectActivity"</span> <span class="hljs-attribute">android:value</span>=<span class="hljs-value">"</span></span><span style="background-color: yellow;"><span style="font-weight: bold;"><span class="hljs-tag"><span class="hljs-value">INPUT_YOUR_FULL_PACKAGE_NAME_OF_MAIN_ACTIVITY</span></span></span></span><span class="hljs-tag"><span class="hljs-value">"</span>/&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">activity</span>&gt;</span></code></pre></div><p>위와 같이 설정 시, 딥링크로 앱 오픈이 될 때, 기존 딥링크 오픈 액티비티 대신, <span style="color: inherit;">IgawDefaultDeeplinkActivity </span>가 실행이 되어 트래킹을 수행한 뒤에 <span style="color: inherit;">IgawRedirectActivity </span>에 설정하신 딥링크 오픈 액티비티가 오픈됩니다.</p><p><span style="color: inherit;">IgawDefaultDeeplinkActivity</span>는 아무런 view도 가지고 있지 않으며 단순히 트래킹만을 위한 기능을 수행하므로 유저에게 노출되지 않습니다.</p><p><span style="font-weight: bold; text-decoration: underline; font-style: italic;"><span style="color: rgb(206, 0, 0);">주의! IgawDefaultDeeplinkActivity를 사용하실 때에는 기존에 세팅하신 딥링크 설정은 제거하셔야 합니다.</span></span></p><p><br></p><p><br></p><h5><span style="font-weight: bold; text-decoration: underline;">솔루션 B. 딥링크 오픈 이후에 인텐트 데이터를 수정 처리하는 경우.</span><span style="font-weight: bold;"> (SingleTask 모드를 사용하는 경우)</span></h5><p>딥링크로 앱이 오픈될 때에 인텐트로 전달되어지는 딥링크 데이터를 이용하여 앱의 상태를 변경할 수 있습니다.</p><p>관련된 동작을 수행한 뒤에 딥링크 데이터를 모두 삭제하시거나 수정하시는 경우에, 애드브릭스 트래킹이 정상 동작할 수 없습니다.</p><p>때문에 딥링크 데이터가 포함되어져 있는 인텐트를 수정하시기 전에 애드브릭스 트래킹을 위한 api를 호출해주셔야 합니다.</p><p>아래 가이드를 참고하여 <span style="color: rgb(206, 0, 0);">IgawCommon.registerReferrer</span> api를 호출해주세요.</p><div class="zero-clipboard"><span class="btn-clipboard">Copy</span></div><div class="highlight"><pre><code class="java hljs"><span class="hljs-comment">// Example Code</span>
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">DeeplinkActivity</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Activity</span> </span>{
+
+    <span class="hljs-annotation">@Override</span>
+    <span class="hljs-function"><span class="hljs-keyword">protected</span> <span class="hljs-keyword">void</span> <span class="hljs-title">onCreate</span><span class="hljs-params">(Bundle savedInstanceState)</span> </span>{
+        <span class="hljs-keyword">super</span>.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        onNewIntent(DeeplinkActivity.<span class="hljs-keyword">this</span>.getIntent());  <br>    }
+ 
+  <span class="hljs-annotation">@Override</span>
+    <span class="hljs-function"><span class="hljs-keyword">protected</span> <span class="hljs-keyword">void</span> <span class="hljs-title">onNewIntent</span><span class="hljs-params">(Intent intent)</span> </span>{
+        <span class="hljs-keyword">super</span>.onNewIntent(intent);              
+        setIntent(intent); 
+        IgawCommon.registerReferrer(DeeplinkActivity.<span class="hljs-keyword">this</span>);<br>    } 
+}<br></code></pre></div><p><br></p><p><br></p><hr id="[object Object]">
+    <h3><div id="deeplink-set-ios"><span style="font-weight: bold;">iOS Deep Link Settings</span></div></h3>
+    <p></p>
+    <p>iOS 앱에 딥링크 기능을 설정하기 위해서는 앱의 info.plist
+        파일을 수정해야 합니다.</p>
+    <p><br></p>
+    <ol>
+        <li>Xcode 프로젝트에서 Info panel을 오픈합니다.<br>
+            <img src="./IGAWorks Help Center_files/ios_url_scheme_setting_on_xcode1.png" class="img-thumbnail" style="height: 269px; line-height: 1.42857; width: 605.575px;"><br></li>
+        <li>URL types 항목에 URL Schemes 를 추가합니다.</li>
+        <li>scheme 값을 정하지 못하셨다면, 애드브릭스 앱키를 이용하셔도
+            됩니다.<br><span style="color: inherit;">애드브릭스 앱키가 123456 이라면, 아래 예시처럼 수정하시면 되겠습니다.<br></span><img src="./IGAWorks Help Center_files/url_scheme.png" class="img-thumbnail"><span style="color: inherit;"><br></span></li>
+    </ol>
+    <p><br></p>
+    <h4><span style="font-weight: bold;">딥링크 동작 확인</span></h4>
+    <p>아래 절차를 따라 딥링크가 정상 설정되었는지 확인할 수 있습니다.</p>
+    <ol>
+        <li>위 내용을 적용한 앱을 빌드하고 실행합니다.</li>
+        <li>실행된 디바이스 혹은 에뮬레이터의 사파리 브라우저를 실행합니다.</li>
+        <li>주소창에 scheme 값을 입력합니다. 위 예시와 같이 설정하였을
+            때에는 adbrix123456:// 을 입력합니다.</li>
+    </ol>
+    <p>앱이 실행된다면 정상적으로 딥링크 설정이 된 것입니다.</p>
+    <p><br></p><h4 style="color: rgb(85, 85, 85);"><span style="font-weight: bold;">딥링크 오픈 트래킹</span></h4><p>딥링크 설정을 통해서 딥링크 트래킹링크를 통한 앱 오픈이 가능하게 되었습니다.</p><p></p><div id="deeplink-set-ios-check">딥링크 트래킹링크 리포팅을 사용하기 위해 아래와 같이 passOpenUrl api를 호출합니다.
+      <p></p><div class="zero-clipboard"><span class="btn-clipboard">Copy</span></div><div class="highlight"><pre><code class="objective-c hljs cpp"><span class="hljs-preprocessor">#<span class="hljs-keyword">if</span> __IPHONE_OS_VERSION_MAX_ALLOWED &lt; __IPHONE_9_0      </span>
+      
+- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation
+{   
+    [IgaworksCore passOpenURL:url];
+    
+    <span class="hljs-keyword">return</span> YES;
+}
+      
+<span class="hljs-preprocessor">#<span class="hljs-keyword">else</span></span>
+
+- (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<nsstring *,id=""> *)options 
+{
+
+    [IgaworksCore passOpenURL:url];
+
+    <span class="hljs-keyword">return</span> YES;
+
+} 
+<span class="hljs-preprocessor">#<span class="hljs-keyword">endif</span></span></nsstring></code></pre></div><p></p><hr id="[object Object]"><p></p><p><br></p></div></div>
+    </div>
+ <br>
+			</div>
+		</div>
+		<div class="col-sm-3 blog-sidebar">
+			<div id="with-out-navi">
+				<div class="sidebar-module">
+					<h4 style="display:none">Documentation Search</h4>
+					 
+<form id="searchForm" action="http://help.igaworks.com/hc/ko/3_3/Content/Search" method="get">
+    <div class="input-group">
+        <input type="text" class="form-control" name="search_text" style="height: 44px;" placeholder="">
+        <span class="input-group-btn">
+            <button href="#" type="button" class="btn btn-success" onclick="this.parentNode.parentNode.parentNode.submit()" style="margin-bottom: 0px !important;height: 44px;width: 50px;font-size: 15px;"><i class="fa fa-search"></i></button>
+        </span>
+    </div>
+</form>
+				</div>
+              
+				<div class="sidebar-module sidebar-module-inset">
+					<h4>Related Articles</h4>
+					 
+<ul>
+    <li><a href="http://help.igaworks.com/hc/ko/3_3/content/Article/how-to-set-deeplink">How to set Deeplink?</a></li>
+    <li><a href="http://help.igaworks.com/hc/ko/3_3/content/Article/7b5dc00f-80b9-46e7-8aef-3b5488485879">[공지] Primary Account 수집에 대한 구글 경고 대응 방법</a></li>
+    <li><a href="http://help.igaworks.com/hc/ko/3_3/content/Article/about-ios-10-update">iOS 10의 '광고 추적제한' 기능 업데이트 대응안내</a></li>
+    <li><a href="http://help.igaworks.com/hc/ko/3_3/content/Article/download_center">SDK 다운로드 </a></li>
+    <li><a href="http://help.igaworks.com/hc/ko/3_3/content/Article/sdk_installation_aos">SDK 설치 : 안드로이드</a></li>
+    <li><a href="http://help.igaworks.com/hc/ko/3_3/content/Article/sdk_installation_ios">SDK 설치 : iOS</a></li>
+    <li><a href="http://help.igaworks.com/hc/ko/3_3/content/Article/sdk_installation_unity">SDK 설치 : 유니티</a></li>
+    <li><a href="http://help.igaworks.com/hc/ko/3_3/content/Article/common_aos">IGAW 공통 연동 : 안드로이드</a></li>
+    <li><a href="http://help.igaworks.com/hc/ko/3_3/content/Article/common_ios">IGAW 공통 연동 : iOS</a></li>
+    <li><a href="http://help.igaworks.com/hc/ko/3_3/content/Article/common_unity_aos">IGAW 공통 연동 : 유니티 안드로이드</a></li>
+    <li><a href="http://help.igaworks.com/hc/ko/3_3/content/Article/common_unity_ios">IGAW 공통 연동 : 유니티 iOS</a></li>
+    <li><a href="http://help.igaworks.com/hc/ko/3_3/content/Article/sdk_gdpr_setup">GDPR 연동</a></li>
+    <li><a href="http://help.igaworks.com/hc/ko/3_3/content/Article/test_device_setting">테스트 디바이스 등록</a></li>
+    <li><a href="http://help.igaworks.com/hc/ko/3_3/content/Article/google_receiver_guide_aos">IGAW 구글 인스톨 리시버 등록 : 안드로이드</a></li>
+    <li><a href="http://help.igaworks.com/hc/ko/3_3/content/Article/ios9_info">iOS 9 업데이트 대응</a></li>
+    <li><a href="http://help.igaworks.com/hc/ko/3_3/content/Article/idfa_setting_ios">IGAW 애플 IDFA 등록: iOS</a></li>
+    <li><a href="http://help.igaworks.com/hc/ko/3_3/content/Article/idfa_setting_unity_ios">IGAW 애플 IDFA 전달 : 유니티 iOS</a></li>
+    <li><a href="http://help.igaworks.com/hc/ko/3_3/content/Article/processkill_guide_aos">ProcessKill 사용 시 endSession 연동 : 안드로이드</a></li>
+</ul> 
+				</div>
+				<div class="sidebar-module">
+					<h4>Another Sections</h4>
+					 
+<ul>
+    <li><a href="http://help.igaworks.com/hc/ko/3_3/content/Section/13">공통연동</a></li>
+    <li><a href="http://help.igaworks.com/hc/ko/3_3/content/Section/c554fd76-10b7-4869-9952-085e2c8fc546">애드팝콘</a></li>
+    <li><a href="http://help.igaworks.com/hc/ko/3_3/content/Section/b3c1603e-45e4-425b-b7c3-38385d5c1407">애드브릭스</a></li>
+    <li><a href="http://help.igaworks.com/hc/ko/3_3/content/Section/16">라이브 오퍼레이션(타겟푸시/공지팝업)</a></li>
+    <li><a href="http://help.igaworks.com/hc/ko/3_3/content/Section/21">쿠폰</a></li>
+    <li><a href="http://help.igaworks.com/hc/ko/3_3/content/Section/b0125ff6-d56c-43bf-b339-44995b49196b">나누</a></li>
+    <li><a href="http://help.igaworks.com/hc/ko/3_3/content/Section/0e321d34-a2f8-4abb-afe4-f8a195bf78a6">리워드 서버</a></li>
+    <li><a href="http://help.igaworks.com/hc/ko/3_3/content/Section/289404f9-daf9-46e6-b76d-32b89a9b6ed8">검수</a></li>
+</ul> 
+				</div>
+				<div class="sidebar-module">
+					 
+        <a href="http://help.igaworks.com/hc/ko/3_3/content/Article/how-to-set-deeplink" class="btn btn-success btn-rad " role="button" style=" margin-bottom: 0px !important;">KO</a>
+        <a href="http://help.igaworks.com/hc/zh-cn/3_3/content/Article/how-to-set-deeplink" class="btn btn-success btn-rad btn-trans" role="button" style=" margin-bottom: 0px !important;">ZH-CN</a>
+        <a href="http://help.igaworks.com/hc/ja/3_3/content/Article/how-to-set-deeplink" class="btn btn-success btn-rad btn-trans" role="button" style=" margin-bottom: 0px !important;">JA</a>
+        <a href="http://help.igaworks.com/hc/en/3_3/content/Article/how-to-set-deeplink" class="btn btn-success btn-rad btn-trans" role="button" style=" margin-bottom: 0px !important;">EN</a>
+
+				</div>
+				<!-- Survey Plugin Start -->
+				<!--
+              <div>
+					<button id="surveyBtn" class="btn btn-prusia btn-flat md-trigger" data-modal="surveyModal" data-href="https://mikehan.typeform.com/to/cMm7My">
+					<span class="glyphicon glyphicon-pencil" style="margin-right:10px"></span>이 아티클에 대한 설문조사 참여하기</button>
+				</div>
+				-->
+              	<!-- Survey Button End -->
+              
+			</div>
+             <!-- NAVI SIDE BAR -->
+          <div class="sidebar-module article-navi-sidebar-module" style="display:none;">
+              <h5><strong>INDEX</strong></h5>
+				<div class="article-navi-footer" style="display: none;">
+                  
+					<ul>
+					</ul>
+				</div>
+			</div>
+			
+          
+          
+			<div class="md-modal md-effect-8" id="surveyModal" style="perspective: 1300px; width: 60%;">
+				<div class="md-content">
+					<div class="modal-header" style="height: 35px; display: none;">
+						<button type="button" class="close md-close" data-dismiss="modal" aria-hidden="true">×</button>
+					</div>
+					<div class="modal-body">
+						<div class="text-center" style="height: 450px;">
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default btn-flat md-close" data-dismiss="modal">Cancel</button>
+					</div>
+					<div id="iframe_div">
+					</div>
+				</div>
+			</div>
+			<div class="md-overlay">
+			</div>
+			<script>		
+              $('#surveyBtn').on('click', function(e) {
+                $("#surveyModal .text-center").html('<i class="loading-icon fa fa-refresh fa-spin fa-lg" style="font-size: 200px;color: rgba(0, 119, 255, 0.2);-webkit-animation: fa-spin 1s infinite linear;animation: fa-spin 1s infinite linear;margin-top: 150px;"></i>');
+                url = $(this).data('href');
+                $("#iframe_div").html('<iframe width="100%" height="100%" frameborder="0" scrolling="no" allowtransparency="true" src="'+url+'" style="display: none;"></iframe>');
+                $("iframe").ready(function() { $("#surveyModal .text-center").html($("#iframe_div").html()); $("#iframe_div").empty(); $("iframe").show(); });
+              });
+          </script>
+			<!-- Survey Plugin End-->
+		</div>
+		<!-- /.blog-sidebar -->
+	</div>
+</div>
+<!-- toc plugin load -->
+<script type="text/javascript">
+    /*!
+ * toc - jQuery Table of Contents Plugin
+ * v0.3.2
+ * http://projects.jga.me/toc/
+ * copyright Greg Allen 2014
+ * MIT License
+*/
+  function ArticleNaviFixScroll(inx){
+    //return true;
+    //console.log(inx);
+    try {
+      var navi = $( "div.article-navi-fix" );
+      var active_top = $( navi ).find('.toc-active').position();
+      
+      $(navi).scrollTop( active_top.top );
+    }
+    catch(err) {
+        
+    }
+  }
+  
+!function(a){a.fn.smoothScroller=function(b){b=a.extend({},a.fn.smoothScroller.defaults,b);var c=a(this);return a(b.scrollEl).animate({scrollTop:c.offset().top-a(b.scrollEl).offset().top-b.offset},b.speed,b.ease,function(){var a=c.attr("id");a.length&&(history.pushState?history.pushState(null,null,"#"+a):document.location.hash=a),c.trigger("smoothScrollerComplete")}),this},a.fn.smoothScroller.defaults={speed:400,ease:"swing",scrollEl:"body,html",offset:0},a("body").on("click","[data-smoothscroller]",function(b){b.preventDefault();var c=a(this).attr("href");0===c.indexOf("#")&&a(c).smoothScroller()})}(jQuery),function(a){var b={};a.fn.toc=function(b){var c,d=this,e=a.extend({},jQuery.fn.toc.defaults,b),f=a(e.container),g=a(e.selectors,f),h=[],i=e.activeClass,j=function(b,c){if(e.smoothScrolling&&"function"==typeof e.smoothScrolling){b.preventDefault();var f=a(b.target).attr("href");e.smoothScrolling(f,e,c)}a("li",d).removeClass(i),a(b.target).parent().addClass(i),ArticleNaviFixScroll(1)},k=function(){c&&clearTimeout(c),c=setTimeout(function(){for(var b,c=a(window).scrollTop(),f=Number.MAX_VALUE,g=0,j=0,k=h.length;k>j;j++){var l=Math.abs(h[j]-c);f>l&&(g=j,f=l)}a("li",d).removeClass(i),b=a("li:eq("+g+")",d).addClass(i),e.onHighlight(b),ArticleNaviFixScroll(2)},50)};return e.highlightOnScroll&&(a(window).bind("scroll",k),k()),this.each(function(){var b=a(this),c=a(e.listType);g.each(function(d,f){var g=a(f);h.push(g.offset().top-e.highlightOffset);var i=e.anchorName(d,f,e.prefix);f.id!==i&&a("<span></span>").attr("id",i).insertBefore(g);var l=a("<a></a>").text(e.headerText(d,f,g)).attr("href","#"+i).bind("click",function(c){a(window).unbind("scroll",k),j(c,function(){a(window).bind("scroll",k)}),b.trigger("selected",a(this).attr("href"))}),m=a("<li></li>").addClass(e.itemClass(d,f,g,e.prefix)).append(l);c.append(m)}),b.html(c)})},jQuery.fn.toc.defaults={container:"body",listType:"<ul></ul>",selectors:"h1,h2,h3",smoothScrolling:function(b,c,d){a(b).smoothScroller({offset:c.scrollToOffset}).on("smoothScrollerComplete",function(){d()})},scrollToOffset:0,prefix:"toc",activeClass:"toc-active",onHighlight:function(){},highlightOnScroll:!0,highlightOffset:100,anchorName:function(c,d,e){if(d.id.length)return d.id;var f=a(d).text().replace(/[^a-z0-9]/gi," ").replace(/\s+/g,"-").toLowerCase();if(b[f]){for(var g=2;b[f+g];)g++;f=f+"-"+g}return b[f]=!0,e+"-"+f},headerText:function(a,b,c){return c.text()},itemClass:function(a,b,c,d){return d+"-"+c[0].tagName.toLowerCase()}}}(jQuery);
+</script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-56422627-4', 'auto');
+  ga('send', 'pageview');
+</script><div style="position:relative;margin-top: 45px;">
+  <div class="blog-footer" style="background: #38383a;">
+    <div class="pull-left" style="margin-left: 20px;">
+      <a href="http://igaworks.com/" target="_blank">
+        <img src="./IGAWorks Help Center_files/igaw_logo_black_bg.png" alt="IGAWORKS" style="width:120px;margin-left: -10px;"></a>
+    </div>
+    <div class="pull-left" style="line-height: 30px; color:#dadada;">
+      <span style="font-size:11px;">© IGAWorks. ALL Rights Reserved.</span>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+    
+
+
+
+
+<!-- 메일 -->
+
+
+<script type="text/javascript">
+    $(function () {
+        // Config ZeroClipboard
+        ZeroClipboard.config({
+            moviePath: '/Scripts/zeroclipboard/ZeroClipboard.swf',
+            hoverClass: 'btn-clipboard-hover'
+        })
+
+
+
+        // Insert copy to clipboard button before .highlight
+        $('.highlight').each(function () {
+            var btnHtml = '<div class="zero-clipboard"><span class="btn-clipboard">Copy</span></div>'
+            $(this).before(btnHtml)
+        })
+        var zeroClipboard = new ZeroClipboard($('.btn-clipboard'))
+        var htmlBridge = $('#global-zeroclipboard-html-bridge')
+
+        // Handlers for ZeroClipboard
+        zeroClipboard.on('load', function () {
+
+            htmlBridge
+                .data('placement', 'top')
+                .attr('title', 'Copy to clipboard')
+                .tooltip()
+        })
+
+        // Copy to clipboard
+        zeroClipboard.on('dataRequested', function (client) {
+
+            var highlight = $(this).parent().nextAll('.highlight').first()
+            client.setText(highlight.text())
+        })
+
+        // Notify copy success and reset tooltip title
+        zeroClipboard.on('complete', function () {
+
+            htmlBridge
+                .attr('title', 'Copied!')
+                .tooltip('fixTitle')
+                .tooltip('show')
+                .attr('title', 'Copy to clipboard')
+                .tooltip('fixTitle')
+        })
+
+        // Notify copy failure
+        zeroClipboard.on('noflash wrongflash', function () {
+
+            htmlBridge
+                .attr('title', 'Flash required')
+                .tooltip('fixTitle')
+                .tooltip('show')
+        })
+
+
+        window.showAlert = function (title, message) {
+            $('#alert_title').html(title);
+            $('#alert_content').html(message);
+            $('#alert_btn').click();
+        }
+
+        $('#loading-spinners').hide();
+        window.showloading = function (isshow, message) {
+            if (isshow)
+                $('#loading-spinners').show();
+            else
+                $('#loading-spinners').hide();
+            $('#loading-message').text(message);
+            $('#loading-message').css('margin-left', $('#loading-message').width() * -0.25);
+        }
+
+        window.onbeforeunload = function (e) {
+            window.showloading(true, "");
+        };
+    })
+</script></body></html>
