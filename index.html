@@ -12,7 +12,38 @@
 setTimeout(scrollTo,0,0,1);
 },false);
   </script>
+  <style>
+  #goFS:-webkit-full-screen #goFS {
+    display: none;
+  }
+  #goFS:-moz-full-screen #goFS {
+    display: none;
+  }
+  #goFS:-ms-fullscreen #goFS {
+    display: none;
+  }
+  #goFS:fullscreen #goFS {
+    display: none;
+  }
+</style>
   <body>
+    
+    <div id="container">
+  <video></video>
+  <div>
+    <button>Play</button>
+    <button>Stop</button>
+    <button id="goFS">Go fullscreen</button>
+  </div>
+</div>
+<script>
+  var goFS = document.getElementById("goFS");
+  goFS.addEventListener("click", function() {
+      var container = document.getElementById("container");
+      container.requestFullscreen();
+  }, false);
+</script>
+    
     <h1><a href="index.html">HTML</a></h1>
 <ol>
   <li><a href="1.html">기술소개</a></li>
