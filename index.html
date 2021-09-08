@@ -17,6 +17,14 @@
 });
   </script>
   <body>
+    <button id="goFS">Go Fullscreen</button>
+<script>
+  var goFS = document.getElementById("goFS");
+  goFS.addEventListener("click", function() {
+      var videoElement = document.getElementById("videoElement");
+      videoElement.requestFullscreen();
+  }, false);
+</script>
 <h1><a href="index.html">HTML</a></h1>
 <ol>
   <li><a href="1.html">기술소개</a></li>
